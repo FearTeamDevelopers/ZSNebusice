@@ -16,6 +16,7 @@
         <script type="text/javascript" src="/public/js/jquery-ui-1.10.3.custom.min.js"></script>
         <script type="text/javascript" src="/public/js/jquery.slides.min.js"></script>
 
+
         <title>Konzultace</title>
     </head>
     <body lang="cs">
@@ -55,6 +56,59 @@
                         </span>
                     </div>
                
+
+        <title>Pedak</title>
+    </head>
+    <body lang="cs">
+        <div id="headerWrapper">
+            <header class="content">
+                <h1><a href="/" id="logo">Pedak BETA</a></h1>
+
+                {include menu.phtml}
+            </header>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="contentWrapper">
+            <div class="content">
+                {if !empty($flashMessage)}
+                <section class="container_12">
+                    <div class="ad-notif-info grid_12"><p>{echo $flashMessage}</p></div>
+                </section>
+                {/if}
+
+                <section class="container_12">
+                    {yield action}
+                </section>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="footerWrapper">
+            <footer class="content">
+                <section class="container_12">
+                    <div class="grid_4">
+                        <span>
+                            Florbal Peďák | Made by Tomáš Hodáň<br/>
+                        </span>
+                    </div>
+                    <div class="grid_4">
+                        <ul>
+                            <li><a href="http://http://www.floorball.org/default.asp" target=_blank>IFF</a></li>
+                            <li><a href="http://cfbu.cz" target=_blank>CFBU</a></li>
+                            <li><a href="http://florbal.cz/" target=_blank>Florbal.cz</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_4">
+                        <ul id="icons">
+                            <li><a href="#"><img src="/public/images/social/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/public/images/social/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/public/images/social/linkedin.png" alt=""></a></li>
+                        </ul>
+                    </div>
+
                 </section>
             </footer>
         </div>
