@@ -34,6 +34,12 @@ class Security extends Base
      * @read
      * @var type 
      */
+    protected $_loginCredentials = array();
+    
+    /**
+     * @read
+     * @var type 
+     */
     protected $_user = null;
 
     /**
@@ -78,11 +84,13 @@ class Security extends Base
 
             if (!empty($parsed->security->default)) {
                 $rolesOptions = (array) $parsed->security->default->roles;
+                $this->_loginCredentials = (array) $parsed->security->default->loginCredentials;
                 $this->_passwordEncoder = $parsed->security->default->encoder;
             }
         } else {
             if (!empty($configuration->security->default)) {
                 $rolesOptions = (array) $configuration->security->default->roles;
+                $this->_loginCredentials = (array) $configuration->security->default->loginCredentials;
                 $this->_passwordEncoder = $configuration->security->default->encoder;
             }
         }
@@ -216,13 +224,13 @@ class Security extends Base
      * @throws Exception\UserPassExpired
      * @throws Exception\Implementation
      */
-    public function authenticate($email, $password, $admin = false)
+    public function authenticate($loginCredential, $password, $admin = false)
     {
         $hash = $this->getHash($password);
         
         $user = \App_Model_User::first(array(
-                    "email = ?" => $email,
-                    "password = ?" => $hash
+                    "{$this->_loginCredentials[0]} = ?" => $loginCredential,
+                    "{$this->_loginCredentials[1]} = ?" => $hash
         ));
         
         if (NULL !== $user) {
