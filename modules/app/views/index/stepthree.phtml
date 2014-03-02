@@ -1,19 +1,20 @@
-{foreach $ucitel in $ucitele}
-<label>
-    {script $iduc = $ucitel->id_ucitel}
-    {echo $ucitel->jmeno." ".$ucitel->prijmeni}
-</label>
-<select name="selectbox_{echo $ucitel->id_ucitel}">
-    {foreach $cas in $casy}
-    <option value="{echo $ucitel->id_ucitel .'-'.$cas->id_cas">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
-    {/foreach}
-</select>
-<span class="error">
-    {if isset($errors["selectbox_".$iduc])}
-            <span class="error">
-                {echo join("<br/>", $errors["selectbox_".$iduc])}
-            </span>
-            {/if}
-</span>
-<br/>
-{/foreach}
+<article class="grid_12">
+    
+    <table>
+        <tr>
+            <td>Jmeno ucitele</td>
+            <td>Cas</td>
+        </tr>
+        {foreach $k in $konzultace}
+        <tr>
+            <td>{echo $k->firstname." ".$k->lastname}</td>
+            <td>{echo $k->cas_start." - ".$k->cas_end}</td>
+        </tr>
+        {/foreach}
+    </table>
+    
+    <form method="post" action="#">
+        <input type="submit" name="subtmiStepThree" value="Potvrdit" />
+        <input type="submit" name="subtmiStepThree" value="Zrusit" />
+    </form>
+</article>

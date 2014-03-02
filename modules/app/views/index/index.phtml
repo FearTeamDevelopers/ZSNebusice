@@ -1,28 +1,26 @@
-
-
-
-<article class="grid_12 indexNextMatch">
+<article class="grid_12">
     <h1>Seznam učitelů</h1>
     <h3>Vyberte učitele, se kterými máte zájem o konzultaci</h3>
     <div class="grid_6">
-      
-        <table>
-            <tr>
-                <td>Jméno učitele</td>
-            </tr>
-            {foreach $ucitel in $ucitele}
-            <tr>
-                <td>
-                    <input type="checkbox" name="checkbox[]" value="{echo $ucitel->id}"/>
-                    <label for="checkbox[]" >{echo $ucitel->firstname.' '.$ucitel->lastname}</label>                  
-                </td>
-            </tr>
-            {/foreach}
-        </table>
-        <input class="continueButton" type="button" value="Pokračovat" onclick=""/>
+
+        <form action="/steptwo" method="post">
+            <table>
+                <tr>
+                    <td>Jméno učitele</td>
+                </tr>
+                {foreach $ucitel in $ucitele}
+                <tr>
+                    <td>
+                        <input type="checkbox" name="checkboxUcitele[]" id="checkboxUcitele_{echo $ucitel->id}" value="{echo $ucitel->id}"/>
+                        <label for="checkboxUcitele_{echo $ucitel->id}">{echo $ucitel->firstname.' '.$ucitel->lastname}</label>                  
+                    </td>
+                </tr>
+                {/foreach}
+            </table>
+
+            <input type="submit" name="submitStepOne" value="Pokracovat" />
+        </form>
     </div>
-   
-   
 </article>
 
 

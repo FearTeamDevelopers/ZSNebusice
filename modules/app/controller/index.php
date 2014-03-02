@@ -2,7 +2,7 @@
 
 use App\Libraries\Controller as Controller;
 use THCFrame\Request\RequestMethods;
-use THCFrame\Core\Core;
+use THCFrame\Registry\Registry;
 
 /**
  * Description of IndexController
@@ -11,8 +11,6 @@ use THCFrame\Core\Core;
  */
 class App_Controller_Index extends Controller
 {
-
-    private $_uciteleIdAr = array();
 
     /**
      * @before _secured
@@ -24,29 +22,101 @@ class App_Controller_Index extends Controller
         $view = $this->getActionView();
 
         $ucitele = App_Model_User::all(
-                array('role = ?' => 'role_ucitel')
-                );
+                        array('role = ?' => 'role_ucitel')
+        );
+
+        if (RequestMethods::post('submitStepOne')) {
+            $uciteleAr = RequestMethods::post('checkboxUcitele');
+
+            if (empty($uciteleAr)) {
+                $view->set('errors', array('ucitele', 'Neni vybran zadny ucitel'));
+            } else {
+                $session = Registry::get("session");
+                $session->set("uciteleAr", serialize($uciteleAr));
+
+                self::redirect('/steptwo');
+            }
+        }
 
         $view->set('ucitele', $ucitele);
     }
 
     /**
-     * 
+     * @before _secured, _rodic
      */
     public function steptwo()
     {
-        $this->_willRenderLayoutView = false;
 
         $view = $this->getActionView();
 
         //pole id ucitelu
-        $this->_uciteleIdAr = $uciteleAr = RequestMethods::post('checkboxUcitele');
+        $session = Registry::get("session");
+        $uciteleAr = unserialize($session->get("uciteleAr"));
 
         $casy = App_Model_Cas::all();
         $selectedProf = App_Model_User::all(
                         array('id_user IN (?)' => $uciteleAr,
                     'role = ?' => 'role_ucitel'), array('id_user', 'jmeno', 'prijmeni')
         );
+
+        if (RequestMethods::post("submitStepTwo")) {
+            $userId = $this->getUser()->getId();
+            $usedCasy = array();
+            $errors = array();
+
+            $database = Registry::get("database");
+            $database->beginTransaction();
+
+            foreach ($uciteleAr as $id) {
+                $selectBox = RequestMethods::post("selectbox_" . $id);
+
+                list($iducitele, $idcasu) = explode("-", $selectBox);
+
+                //kontrola zaznamu ve vazebni tabulce
+                $obsazeneCasy = App_Model_Konzultace::all(
+                                array(
+                                    "id_ucitel = ?" => $iducitele,
+                                    "id_cas = ?" => $idcasu
+                                )
+                );
+
+                //pokud nejaky zaznam existuje vytvori chybu
+                if (FALSE !== $obsazeneCasy) {
+                    $errors['selectbox_' . $id] = "Tento cas je jiz zabran";
+                    continue;
+                }
+
+                //kontrola na duplicitni casy ve formulari
+                if (array_key_exists($idcasu, $usedCasy)) {
+                    $errors['selectbox_' . $id] = "Tento cas je jiz vybran u jineho ucitele";
+                } else {
+                    $usedCasy[] = $idcasu;
+                }
+
+                //vytvoreni novyho zaznamu ve vazebni tabulce
+                $konzultace = new App_Model_Konzultace(array(
+                    "id_cas" => $idcasu,
+                    "id_ucitel" => $iducitele,
+                    "id_rodic" => $userId
+                ));
+
+                if ($konzultace->validate()) {
+                    $newIds[] = $konzultace->save();
+                } else {
+                    $errors['selectbox_' . $id] = "Chyba pri ukladani zaznamu";
+                }
+            }
+
+            if (empty($errors)) {
+                $database->commitTransaction();
+                $session->set("newIds", serialize($newIds));
+                $view->flashMessage("Casy navstev ulozeny");
+                self::redirect("/stepthree");
+            } else {
+                $view->set("errors", $errors);
+                $database->rollbackTransaction();
+            }
+        }
 
         $view->set("casy", $casy)
                 ->set("ucitele", $selectedProf);
@@ -57,98 +127,57 @@ class App_Controller_Index extends Controller
      */
     public function stepthree()
     {
-        $this->_willRenderLayoutView = false;
-
-        if (empty($this->_uciteleIdAr)) {
-            throw new Exception("nejsou vybrani ucitele");
-        }
-
         $view = $this->getActionView();
+        $userId = 7;
+        //$userId = $this->getUser()->getId();
+        $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
 
-        //id prihlaseneho rodice
-        $userId = $this->getUser()->getId();
-        $usedCasy = array();
-        $errors = array();
+        $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
+                ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
+                ->where("tb_konzultace.id_rodic = ?", $userId);
 
-        $database = \THCFrame\Registry\Registry::get("database");
-        $database->beginTransaction();
+        $konzultace = App_Model_Konzultace::initialize($query);
+        //print("<pre>".print_r($konzultace,true)."</pre>");die();
+        $view->set("konzultace", $konzultace);
 
-        foreach ($this->_uciteleIdAr as $id) {
-            $selectBox = RequestMethods::post("selectbox_" . $id);
-
-            list($iducitele, $idcasu) = explode("-", $selectBox);
-
-            //kontrola zaznamu ve vazebni tabulce
-            $obsazeneCasy = App_Model_Konzultace::all(
-                            array(
-                                "id_ucitel = ?" => $iducitele,
-                                "id_cas = ?" => $idcasu
-                            )
-            );
-
-            //pokud nejaky zaznam existuje vytvori chybu
-            if (FALSE !== $obsazeneCasy) {
-                $errors['selectbox_' . $id] = "Tento cas je jiz zabran";
-                continue;
-            }
-
-            //kontrola na duplicitni casy ve formulari
-            if (array_key_exists($idcasu, $usedCasy)) {
-                $errors['selectbox_' . $id] = "Tento cas je jiz vybran u jineho ucitele";
-            } else {
-                $usedCasy[] = $idcasu;
-            }
-
-            //vytvoreni novyho zaznamu ve vazebni tabulce
-            $konzultace = new App_Model_Konzultace(array(
-                "id_cas" => $idcasu,
-                "id_ucitel" => $iducitele,
-                "id_rodic" => $userId
-            ));
-
-            if ($konzultace->validate()) {
-                $konzultace->save();
-            } else {
-                $errors['selectbox_' . $id] = "Chyba pri ukladani zaznamu";
-            }
-        }
-
-        if (empty($errors)) {
-            $database->commitTransaction();
-            $view->flashMessage("Casy navstev ulozeny");
+        if (RequestMethods::post("submitStepThree") == "Potvrdit") {
+            $view->flashMessage("Konzultace jsou nyní potvrzeny");
             self::redirect("/stepfour");
-        } else {
-            $view->set("errors", $errors);
-            $database->rollbackTransaction();
+        } elseif (RequestMethods::post("submitStepTree") == "Zrusit") {
+
+            $session = Registry::get("session");
+            $konzIds = unserialize($session->get("newIds"));
+
+            $errors = array();
+            $database = Registry::get("database");
+            $database->beginTransaction();
+
+            foreach ($konzIds as $id) {
+                $konzultace = App_Model_Konzultace::first(
+                                array("id = ?" => $id)
+                );
+
+                if (!$konzultace->delete()) {
+                    $errors[] = "Chyba pri mazani zaznamu {$id}";
+                }
+            }
+
+            if (empty($errors)) {
+                $database->commitTransaction();
+                self::redirect("/");
+            } else {
+                $view->flashMessage("Nastala neocekavana chyba");
+                $database->rollbackTransaction();
+            }
         }
     }
 
     /**
-     * 
+     * @before _secured, _rodic
      */
     public function stepfour()
     {
-        /*
-         * select * from tb_konzultace
-         * join tb_user uc on  tb_konzultace.id_ucitel = uc.id_user
-         * join tb_user ur on tb_konzultace.id_rodic = ur.id_user
-         * where tb_konzultace.id_rodic = id
-         */
-        $this->_willRenderLayoutView = false;
-
-        $view = $this->getActionView();
-
-        $userId = $this->getUser()->getId();
-        $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
-
-        $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id_user", "uc", array("uc.*"))
-                ->join("tb_user", "tb_konzultace.id_rodic = ur.id_user", "ur", array("ur.*"))
-                ->join("tb_cas", "tb_konzultace.id_cas = c.id_cas", "c", array("c.*"))
-                ->where("tb_konzultace.id_rodic = ?", $userId);
-
-        $konzultace = App_Model_Konzultace::initialize($query);
-
-        $view->set("konzultace", $konzultace);
+        
     }
 
 }

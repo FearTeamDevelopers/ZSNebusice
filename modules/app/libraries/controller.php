@@ -43,12 +43,12 @@ class Controller extends BaseController {
     /**
      * @protected
      */
-    public function _admin() {
+    public function _rodic() {
         $security = Registry::get("security");
         $view = $this->getActionView();
 
-        if ($security->getUser() && !$security->isGranted("role_admin")) {
-            $view->flashMessage("Access denied! Administrator access level required.");
+        if ($security->getUser() && !$security->isGranted("role_rodic")) {
+            $view->flashMessage("Access denied!");
             $security->logout();
             self::redirect("/login");
         }

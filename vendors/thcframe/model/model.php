@@ -88,7 +88,7 @@ class Model extends Base
             "message" => "The {0} field must contain valid time (hh:mm / hh:mm:ss)"
         )
     );
-
+   
     /**
      * @read
      */

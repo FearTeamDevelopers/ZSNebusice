@@ -574,7 +574,7 @@ class Query extends Base
      * 
      * @return type
      */
-    public function assembleSelect()
+    public function assemble()
     {
         $sql = $this->_buildSelect();
         return (string) $sql;

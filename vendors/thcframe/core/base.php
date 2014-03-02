@@ -16,7 +16,7 @@ class Base
 {
 
     private $_inspector;
-    private $_dataStore = array();
+    protected $_dataStore = array();
 
     /**
      * 
@@ -103,11 +103,11 @@ class Base
                 if (isset($this->$property)) {
                     return $this->$property;
                 }else{
-                    if(array_key_exists($property, $this->_dataStore)){
-                        return $this->_dataStore[$property];
-                    }
+                    return null;
                 }
-
+            } elseif (array_key_exists($normalized, $this->_dataStore)) {
+                return $this->_dataStore[$normalized];
+            } else {
                 return null;
             }
         }
@@ -126,12 +126,12 @@ class Base
 
                 $this->$property = $arguments[0];
                 return $this;
-            }else{
-                $this->_dataStore[$property] = $arguments[0];
+            } else {
+                $this->_dataStore[$normalized] = $arguments[0];
                 return $this;
             }
         }
-        
+
         $unsetMatches = StringMethods::match($name, "#^uns([a-zA-Z0-9_]+)$#");
         if (count($unsetMatches) > 0) {
             $normalized = lcfirst($setMatches[0]);
@@ -146,8 +146,8 @@ class Base
 
                 unset($this->$property);
                 return $this;
-            }else{
-                unset($this->_dataStore[$property]);
+            } else {
+                unset($this->_dataStore[$normalized]);
                 return $this;
             }
         }
@@ -162,6 +162,7 @@ class Base
      */
     public function __get($name)
     {
+
         $function = "get" . ucfirst($name);
         return $this->$function();
     }
@@ -177,7 +178,7 @@ class Base
         $function = "set" . ucfirst($name);
         return $this->$function($value);
     }
-    
+
     /**
      * 
      * @param type $name

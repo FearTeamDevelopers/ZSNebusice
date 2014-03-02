@@ -21,8 +21,6 @@ foreach ($iterator as $item) {
 //module loading
 
 THCFrame\Core\Core::registerModule(new App_Module());
-THCFrame\Core\Core::registerModule(new Admin_Module());
-THCFrame\Core\Core::registerModule(new Cron_Module());
 
 // load services and run dispatcher
 THCFrame\Core\Core::run();

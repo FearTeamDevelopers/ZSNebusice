@@ -16,7 +16,7 @@ class App_Model_Potvrzeni extends Model
      * @primary
      * @type auto_increment
      */
-    protected $_id_potvrzeni;
+    protected $_id;
 
     /**
      * @column
