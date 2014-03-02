@@ -1,0 +1,19 @@
+<nav>
+    <ul id="menu">
+        <li id="active"><a href="/">Home</a></li>
+        {if !isset($authUser)}
+        <li><a href="/team">Team</a></li>
+        <li><a href="/zapasy">Zápasy</a></li>
+        <li><a href="/kontakt">Kontakt</a></li>
+        <li class="end"><a href="/login">Přihlásit se</a></li>
+        {/if}
+        {else}
+        <li><a href="/team">Team</a></li>
+        <li><a href="/zapasy">Zápasy</a></li>
+        <li><a href="/kecarna">Kecárna</a></li>
+        <li><a href="/treninky">Tréninky</a></li>
+        <li><a href="/profil">Profil</a></li>
+        <li class="end"><a href="/logout">Odhlásit se</a></li>
+        {/else}
+    </ul>
+</nav>

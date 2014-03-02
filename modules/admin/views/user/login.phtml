@@ -1,0 +1,40 @@
+<article class="grid_8">
+    <h1>Login to administration</h1>
+    <form method="post" action="#" class="stdform">
+        <p>
+            {if isset($account_error)}
+            <span class="error">
+                {echo $account_error}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Email</label>
+            <span class="field">
+                <input type="email" name="email" class="mediuminput" required/>
+            </span>
+            {if isset($email_error)}
+            <span class="error">
+                {echo $email_error}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Password</label>
+            <span class="field">
+                <input type="password" name="password" class="mediuminput" required/>
+            </span>
+            {if isset($password_error)}
+            <span class="error">
+                {echo $password_error}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <span class="field">
+                <input type="submit" name="login" class="mediuminput" value="Přihlásit" />
+            </span>
+        </p>
+
+    </form>
+</article>

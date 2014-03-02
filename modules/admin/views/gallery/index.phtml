@@ -1,0 +1,29 @@
+<article class="grid_12">
+    <h1 class="left">Galleries</h1>
+    <a class="button-orange right" href="/admin/gallery/add/">+ Add gallery</a>
+    <div class="clear"></div><br/><br/>
+
+    {if !empty($galleries)}
+    <table class="dt-base">
+        <thead>
+        <th>Title</th><th>Desc</th><th>Active</th>
+        <th>Created</th><th>Manage</th>
+        </thead>
+        <tbody>
+            {foreach $gallery in $galleries}
+            <tr>
+                <td>{echo $gallery->title}</td>
+                <td>{echo $gallery->description}</td>
+                <td>{echo $gallery->active}</td>
+                <td>{echo $gallery->created}</td>
+                <td>
+                    <a class="button-edit" href="/admin/gallery/edit/{echo $gallery->id}" >Edit</a>
+                    <a class="button-delete" href="/admin/gallery/delete/{echo $gallery->id}" >Delete</a>
+                    <a class="button-detail" href="/admin/gallery/detail/{echo $gallery->id}" >Detail</a>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+    {/if}
+</article>

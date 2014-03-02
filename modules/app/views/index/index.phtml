@@ -1,0 +1,111 @@
+<article class="grid_12">
+    {if !empty($news)}
+    <div id="slides">
+        {foreach $_news in $news}
+        <div>
+            <h2>{echo $_news->title}</h2><br/>
+            <p class="newsText">{echo nl2br(substr($_news->body, 0, 900))}... 
+                [ <a href="/novinky/{echo $_news->id}">Celý článek</a> ]</p>
+            <p>
+                <span>Autor: {echo $_news->author}</span>
+                <span>Vytvořeno: {echo date("d.m. Y H:i", strtotime($_news->created))}</span>
+            </p>
+        </div>
+        {/foreach}
+    </div>
+    {/if} 
+</article>
+
+<div class="clear"></div>
+
+<article class="grid_12 indexNextMatch">
+    <h1>Příští zápasy</h1>
+    {if !empty($nextMatchA)}
+    <div class="grid_6">
+        <h2>A</h2>
+        <table>
+            <tr>
+                <td>Datum</td><td>Domací</td><td>Hosté</td><td>Hala</td>
+            </tr>
+            {foreach $match in $nextMatchA}
+            <tr>
+                <td>{echo date("d.m. Y", strtotime($match->date))}</td>
+                <td>{echo $match->home}</td>
+                <td>{echo $match->host}</td>
+                <td>{echo $match->hall}</td>
+            </tr>
+            {/foreach}
+        </table>
+    </div>
+    <div class="grid_6">
+        <h2>B</h2>
+        <table>
+            <tr>
+                <td>Datum</td><td>Domací</td><td>Hosté</td><td>Hala</td>
+            </tr>
+            {foreach $match in $nextMatchB}
+            <tr>
+                <td>{echo date("d.m. Y", strtotime($match->date))}</td>
+                <td>{echo $match->home}</td>
+                <td>{echo $match->host}</td>
+                <td>{echo $match->hall}</td>
+            </tr>
+            {/foreach}
+        </table>
+    </div>
+    {/if} 
+</article>
+
+<div class="clear"></div>
+
+<article class="grid_12">
+    <h1>Poslední zápasy</h1>
+
+    {if !empty($lastMatch)}
+    {foreach $match in $lastMatch}
+
+    <div class="ribbon-wrapper lastmatch">
+        {if (strtoupper(substr($match->home,0,14)) == "FBK VŠSK PEDF") && ($match->scoreHome > $match->scoreHost)}
+        <div class="ribbon-wrapper-green"><div class="ribbon-green-left">WIN</div></div>
+        {/if}
+        {elseif (strtoupper(substr($match->host,0,14)) == "FBK VŠSK PEDF") && ($match->scoreHost > $match->scoreHome)}
+        <div class="ribbon-wrapper-green"><div class="ribbon-green-left">WIN</div></div>
+        {/elseif}
+        
+        <p class="lastmatch-left">
+            Datum: {echo date("d.m. Y", strtotime($match->date))}<br/><br/>
+            {echo $match->home} <span class="lastmatch-result">{echo $match->scoreHome}</span>
+        </p>
+        <p class="lastmatch-right">
+            Hala: {echo $match->hall} <br/><br/>
+            <span class="lastmatch-result">{echo $match->scoreHost}</span> {echo $match->host}
+        </p>
+    </div>
+    {/foreach}
+
+    {/if} 
+    {else}
+    Žádné výsledky
+    {/else}
+</article>
+
+<div class="clear"></div>
+
+<article class="grid_12">
+    <h1>Sponzoři</h1>
+
+    {if !empty($sponsors)}
+    <ul class="inline-list">
+        {foreach $sponsor in $sponsors}
+        <li>
+            <a href="{echo $sponsor->url}" target=_blank>
+                <img src="{echo $sponsor->logo}" alt='' />
+            </a>
+        </li>
+        {/foreach}
+    </ul>
+    {/if}
+</article>
+
+
+<div class="clear"></div>

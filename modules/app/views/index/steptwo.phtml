@@ -1,0 +1,11 @@
+{foreach $ucitel in $ucitele}
+<label>
+    {echo $ucitel->jmeno." ".$ucitel->prijmeni}
+</label>
+<select name="selectbox_{echo $ucitel->id_ucitel">
+    {foreach $cas in $casy}
+    <option value="{echo $ucitel->id_ucitel .'-'.$cas->id_cas">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
+    {/foreach}
+</select>
+<br/>
+{/foreach}

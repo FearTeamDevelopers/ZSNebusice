@@ -1,0 +1,30 @@
+<article class="grid_12">
+    <h1>Delete match</h1>
+
+    <form method="post" action="#" class="stdform">
+        <p>
+            <label>Home</label>
+            <span class="field">
+                <input type="text" name="home" class="mediuminput" disabled value="{echo $match->home}"/>
+            </span>
+        </p>
+        <p>
+            <label>Host</label>
+            <span class="field">
+                <input type="text" name="host" class="mediuminput" disabled value="{echo $match->host}"/>
+            </span>
+        </p>
+        <p>
+            <label>Date</label>
+            <span class="field">
+                <input type="text" name="date" class="mediuminput" disabled value="{echo $match->date}"/>
+            </span>
+        </p>
+        <p>
+            <span class="field">
+                <input type="submit" name="deleteMatch" value="Delete match" />
+                <input type="submit" name="cancel" value="Cancel" />
+            </span>
+        </p>
+    </form>
+</article>

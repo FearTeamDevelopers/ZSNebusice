@@ -1,0 +1,30 @@
+<article class="grid_12">
+    <h1>Delete gallery</h1>
+
+    <form method="post" action="#" class="stdform">
+        <p>
+            <label>Title</label>
+            <span class="field">
+                <input type="text" name="title" class="mediuminput" disabled value="{echo $gallery->title}"/>
+            </span>
+        </p>
+        <p>
+            <label>Description</label>
+            <span class="field">
+                <input type="text" name="description" class="mediuminput" disabled value="{echo $gallery->description}"/>
+            </span>
+        </p>
+        <p>
+            <label>Created</label>
+            <span class="field">
+                <input type="text" name="created" class="mediuminput" disabled value="{echo $gallery->date}"/>
+            </span>
+        </p>
+        <p>
+            <span class="field">
+                <input type="submit" name="deleteGallery" value="Delete gallery" />
+                <input type="submit" name="cancel" value="Cancel" />
+            </span>
+        </p>
+    </form>
+</article>

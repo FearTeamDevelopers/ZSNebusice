@@ -1,0 +1,34 @@
+<article class="grid_12">
+    <h1 class="left">User list</h1>
+    <a class="button-orange right" href="/admin/user/add/">+ Create user account</a>
+    <div class="clear"></div><br/><br/>
+
+    {if !empty($users)}
+    <table class="dt-base">
+        <thead>
+        <th>Firstname</th><th>Lastname</th><th>Email</th><th>Team</th>
+        <th>Role</th><th>Active</th><th>Created</th><th>Manage</th>
+        </thead>
+        <tbody>
+            {foreach $user in $users}
+            <tr>
+                <td>{echo $user->firstname}</td>
+                <td>{echo $user->lastname}</td>
+                <td>{echo $user->email}</td>
+                <td>{echo $user->team}</td>
+                <td>{echo $user->role}</td>
+                <td>{echo $user->active}</td>
+                <td>{echo $user->created}</td>
+                <td>
+                    <a class="button-edit" href="/admin/user/edit/{echo $user->id}" >Edit</a>
+                    {if $superadmin}
+                    <a class="button-delete" href="/admin/user/delete/{echo $user->id}" >Delete</a>
+                    {/if}
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+
+    {/if}
+</article>

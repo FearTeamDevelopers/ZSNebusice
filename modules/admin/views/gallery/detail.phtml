@@ -1,0 +1,43 @@
+<article class="grid_12">
+    <h1 class="left">Gallery detail</h1>
+    <a class="button-orange right" href="/admin/gallery/upload/{echo $gallery->id}">+ Upload photos</a>
+    <div class="clear"></div><br/>
+    
+    <div>
+        <p>{echo $gallery->title}</p>
+        <p>{echo $gallery->description}</p>
+    </div>
+    
+    <div>
+        {if !empty($photos)}
+        <form class="stdform" method="post" action="/admin/gallery/photoAction/">
+            <ul class="inline-list">
+            {foreach $photo in $photos}
+            <li>
+                {if ($photo->active)}
+                <div class="gallery-photolist-photo-active">
+                {/if}
+                {else}
+                <div class="gallery-photolist-photo-inactive">
+                {/else}
+                
+                <img src="{echo $photo->pathSmall}" alt="" width="200"/>
+                <input type="checkbox" name="photos[]" value="{echo $photo->id}" />
+                </div>
+            </li>
+            
+            {/foreach}
+            </ul>
+            <br/>
+            <div class="clear"></div>
+            <select name="action">
+                <option value="delete">Delete</option>
+                <option value="activate">Activate</option>
+                <option value="inactivate">Inactivate</option>
+            </select>
+            
+            <input type="submit" name="performPhotoAction" value="Execute" />
+        </form>
+        {/if}
+    </div>
+</article>
