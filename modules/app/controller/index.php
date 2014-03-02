@@ -9,20 +9,22 @@ use THCFrame\Registry\Registry;
  *
  * @author Tomy
  */
-class App_Controller_Index extends Controller
-{
+class App_Controller_Index extends Controller {
 
     /**
-     * @before _secured
+     * @before _secured, _nepotvrzeno
      */
-    public function index()
-    {
+    public function index() {
 
         //vyber ucitelu
         $view = $this->getActionView();
 
+
+
+
         $ucitele = App_Model_User::all(
-                        array('role = ?' => 'role_ucitel')
+                        array('role = ?' => 'role_ucitel'
+                        )
         );
 
         if (RequestMethods::post('submitStepOne')) {
@@ -37,23 +39,22 @@ class App_Controller_Index extends Controller
                 self::redirect('/steptwo');
             }
         }
-        
+
         $view->set('errors', $errors)
                 ->set('ucitele', $ucitele);
     }
 
     /**
-     * @before _secured, _rodic
+     * @before _secured, _rodic, _nepotvrzeno                                                                                               
      */
-    public function steptwo()
-    {
+    public function steptwo() {
 
         $view = $this->getActionView();
 
         //pole id ucitelu
         $session = Registry::get("session");
         $uciteleAr = unserialize($session->get("uciteleAr"));
-        
+
         $casy = App_Model_Cas::all();
         $selectedProf = App_Model_User::all(
                         array('id IN ?' => array_values($uciteleAr),
@@ -80,7 +81,6 @@ class App_Controller_Index extends Controller
                                     "id_cas = ?" => $idcasu
                                 )
                 );
-
                 //pokud nejaky zaznam existuje vytvori chybu
                 if (!empty($obsazeneCasy)) {
                     $errors['selectbox_' . $id] = array("Tento cas je jiz zabran");
@@ -88,7 +88,7 @@ class App_Controller_Index extends Controller
                 }
 
                 //kontrola na duplicitni casy ve formulari
-                if (array_key_exists($idcasu, $usedCasy)) {
+                if (in_array($idcasu, $usedCasy)) {
                     $errors['selectbox_' . $id] = array("Tento cas je jiz vybran u jineho ucitele");
                 } else {
                     $usedCasy[] = $idcasu;
@@ -124,10 +124,9 @@ class App_Controller_Index extends Controller
     }
 
     /**
-     * @before _secured, _rodic
+     * @before _secured, _rodic, _nepotvrzeno
      */
-    public function stepthree()
-    {
+    public function stepthree() {
         $view = $this->getActionView();
         $userId = $this->getUser()->getId();
         $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
@@ -135,14 +134,19 @@ class App_Controller_Index extends Controller
         $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
                 ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
                 ->where("tb_konzultace.id_rodic = ?", $userId);
-
+        $bla = App_Model_User::first(
+                        array(
+                            'id=?' => $userId
+                        )
+        );
         $konzultace = App_Model_Konzultace::initialize($query);
         $view->set("konzultace", $konzultace);
-
         if (RequestMethods::post("submitStepThree") == "Potvrdit") {
             $view->flashMessage("Konzultace jsou nyní potvrzeny");
+            $bla->potvrzeno = true;
+            $bla->save();
             self::redirect("/stepfour");
-        } elseif (RequestMethods::post("submitStepTree") == "Zrusit") {
+        } elseif (RequestMethods::post("submitStepThree") == "Zrusit") {
 
             $session = Registry::get("session");
             $konzIds = unserialize($session->get("newIds"));
@@ -174,9 +178,20 @@ class App_Controller_Index extends Controller
     /**
      * @before _secured, _rodic
      */
-    public function stepfour()
-    {
-        
+    public function stepfour() {
+         $view = $this->getActionView();
+         $userId = $this->getUser()->getId();
+               $bla = App_Model_User::first(
+                        array(
+                            'id=?' => $userId
+                        )
+        );
+        if (RequestMethods::post("submitStepFour") == "Zrusit") {
+            $view->flashMessage("Potvrzení zrušeno");
+            $bla->potvrzeno = false;
+            $bla->save();
+            self::redirect("/");
+        }
     }
 
 }

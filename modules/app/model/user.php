@@ -84,6 +84,15 @@ class App_Model_User extends Model implements UserInterface
      * @label last name
      */
     protected $_lastname;
+    
+       /**
+     * @column
+     * @readwrite
+     * @type boolean
+     *
+     * @label potvrzeno
+     */
+    protected $_potvrzeno;
 
     /**
      * @column

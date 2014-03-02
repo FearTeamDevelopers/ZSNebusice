@@ -53,6 +53,26 @@ class Controller extends BaseController {
             self::redirect("/login");
         }
     }
+    
+    /**
+     *  @protected
+     */
+    public function _nepotvrzeno(){
+        $security = Registry::get("security");
+        $view = $this->getActionView();
+        
+        $user = $this->getUser()->getId();
+        $potvrzeno = \App_Model_User::all(
+                array('role = ?' => 'role_rodic',
+                    'potvrzeno = ?'=>false,
+                    'id = ?' =>$user
+                    )
+                );
+        if(empty($potvrzeno)){
+            //potvrzeno
+            self::redirect("/stepfour");
+        }
+    }
 
     /**
      * 
