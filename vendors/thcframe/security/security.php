@@ -312,4 +312,3 @@ class Security extends Base
     }
 
 }
-s
