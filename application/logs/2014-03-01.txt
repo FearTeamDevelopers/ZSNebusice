@@ -1,0 +1,1219 @@
+[2014-03-01 14:03:47]framework.module.initialize.before: App
+[2014-03-01 14:03:47]framework.module.initialize.before: Admin
+[2014-03-01 14:03:47]framework.module.initialize.before: Cron
+[2014-03-01 14:03:47]framework.configuration.initialize.before: ini
+[2014-03-01 14:03:47]framework.configuration.initialize.after: ini
+[2014-03-01 14:03:47]framework.database.initialize.before: 
+[2014-03-01 14:03:47]framework.database.initialize.after: mysql
+[2014-03-01 14:03:47]framework.cache.initialize.before: 
+[2014-03-01 14:03:47]framework.cache.initialize.after: filecache
+[2014-03-01 14:03:47]framework.session.initialize.before: 
+[2014-03-01 14:03:47]framework.session.initialize.after: server
+[2014-03-01 14:03:47]framework.security.initialize.before: 
+[2014-03-01 14:03:47]framework.security.initialize.after: 
+[2014-03-01 14:03:47]framework.router.findroute.before: /stepfour
+[2014-03-01 14:03:47]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:03:47]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:03:47]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:03:47]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:03:47]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:03:47]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:03:47]framework.controller.construct.after: App_Controller_Index
+Average: 0.0043335714285714, Longest: 0.026002, Shortest: 0, Total: 0.103006
+[2014-03-01 14:03:48]framework.module.initialize.before: App
+[2014-03-01 14:03:48]framework.module.initialize.before: Admin
+[2014-03-01 14:03:48]framework.module.initialize.before: Cron
+[2014-03-01 14:03:48]framework.configuration.initialize.before: ini
+[2014-03-01 14:03:48]framework.configuration.initialize.after: ini
+[2014-03-01 14:03:48]framework.database.initialize.before: 
+[2014-03-01 14:03:48]framework.database.initialize.after: mysql
+[2014-03-01 14:03:48]framework.cache.initialize.before: 
+[2014-03-01 14:03:48]framework.cache.initialize.after: filecache
+[2014-03-01 14:03:48]framework.session.initialize.before: 
+[2014-03-01 14:03:48]framework.session.initialize.after: server
+[2014-03-01 14:03:48]framework.security.initialize.before: 
+[2014-03-01 14:03:48]framework.security.initialize.after: 
+[2014-03-01 14:03:48]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:03:48]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0044669333333333, Longest: 0.025002, Shortest: 0, Total: 0.072005
+[2014-03-01 14:04:19]framework.module.initialize.before: App
+[2014-03-01 14:04:19]framework.module.initialize.before: Admin
+[2014-03-01 14:04:19]framework.module.initialize.before: Cron
+[2014-03-01 14:04:19]framework.configuration.initialize.before: ini
+[2014-03-01 14:04:19]framework.configuration.initialize.after: ini
+[2014-03-01 14:04:19]framework.database.initialize.before: 
+[2014-03-01 14:04:19]framework.database.initialize.after: mysql
+[2014-03-01 14:04:19]framework.cache.initialize.before: 
+[2014-03-01 14:04:19]framework.cache.initialize.after: filecache
+[2014-03-01 14:04:19]framework.session.initialize.before: 
+[2014-03-01 14:04:19]framework.session.initialize.after: server
+[2014-03-01 14:04:19]framework.security.initialize.before: 
+[2014-03-01 14:04:19]framework.security.initialize.after: 
+[2014-03-01 14:04:19]framework.router.findroute.before: /stepfour
+[2014-03-01 14:04:19]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:04:19]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:04:19]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:04:19]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:04:19]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:04:19]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:04:19]framework.controller.construct.after: App_Controller_Index
+Average: 0.0040954761904762, Longest: 0.027002, Shortest: 0.001, Total: 0.112007
+[2014-03-01 14:04:20]framework.module.initialize.before: App
+[2014-03-01 14:04:20]framework.module.initialize.before: Admin
+[2014-03-01 14:04:20]framework.module.initialize.before: Cron
+[2014-03-01 14:04:20]framework.configuration.initialize.before: ini
+[2014-03-01 14:04:20]framework.configuration.initialize.after: ini
+[2014-03-01 14:04:20]framework.database.initialize.before: 
+[2014-03-01 14:04:20]framework.database.initialize.after: mysql
+[2014-03-01 14:04:20]framework.cache.initialize.before: 
+[2014-03-01 14:04:20]framework.cache.initialize.after: filecache
+[2014-03-01 14:04:20]framework.session.initialize.before: 
+[2014-03-01 14:04:20]framework.session.initialize.after: server
+[2014-03-01 14:04:20]framework.security.initialize.before: 
+[2014-03-01 14:04:20]framework.security.initialize.after: 
+[2014-03-01 14:04:20]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:04:20]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045336, Longest: 0.027002, Shortest: 0.001, Total: 0.073004
+[2014-03-01 14:06:22]framework.module.initialize.before: App
+[2014-03-01 14:06:22]framework.module.initialize.before: Admin
+[2014-03-01 14:06:22]framework.module.initialize.before: Cron
+[2014-03-01 14:06:22]framework.configuration.initialize.before: ini
+[2014-03-01 14:06:22]framework.configuration.initialize.after: ini
+[2014-03-01 14:06:22]framework.database.initialize.before: 
+[2014-03-01 14:06:22]framework.database.initialize.after: mysql
+[2014-03-01 14:06:22]framework.cache.initialize.before: 
+[2014-03-01 14:06:22]framework.cache.initialize.after: filecache
+[2014-03-01 14:06:22]framework.session.initialize.before: 
+[2014-03-01 14:06:22]framework.session.initialize.after: server
+[2014-03-01 14:06:22]framework.security.initialize.before: 
+[2014-03-01 14:06:22]framework.security.initialize.after: 
+[2014-03-01 14:06:22]framework.router.findroute.before: /stepfour
+[2014-03-01 14:06:22]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:06:22]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:06:22]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:06:22]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:06:22]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:06:22]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:06:22]framework.controller.construct.after: App_Controller_Index
+Average: 0.0038097142857143, Longest: 0.026002, Shortest: 0, Total: 0.173009
+[2014-03-01 14:06:23]framework.module.initialize.before: App
+[2014-03-01 14:06:23]framework.module.initialize.before: Admin
+[2014-03-01 14:06:23]framework.module.initialize.before: Cron
+[2014-03-01 14:06:23]framework.configuration.initialize.before: ini
+[2014-03-01 14:06:23]framework.configuration.initialize.after: ini
+[2014-03-01 14:06:23]framework.database.initialize.before: 
+[2014-03-01 14:06:23]framework.database.initialize.after: mysql
+[2014-03-01 14:06:23]framework.cache.initialize.before: 
+[2014-03-01 14:06:23]framework.cache.initialize.after: filecache
+[2014-03-01 14:06:23]framework.session.initialize.before: 
+[2014-03-01 14:06:23]framework.session.initialize.after: server
+[2014-03-01 14:06:23]framework.security.initialize.before: 
+[2014-03-01 14:06:23]framework.security.initialize.after: 
+[2014-03-01 14:06:23]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:06:23]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0038002, Longest: 0.025002, Shortest: 0.001, Total: 0.061003
+[2014-03-01 14:09:17]framework.module.initialize.before: App
+[2014-03-01 14:09:17]framework.module.initialize.before: Admin
+[2014-03-01 14:09:17]framework.module.initialize.before: Cron
+[2014-03-01 14:09:17]framework.configuration.initialize.before: ini
+[2014-03-01 14:09:17]framework.configuration.initialize.after: ini
+[2014-03-01 14:09:17]framework.database.initialize.before: 
+[2014-03-01 14:09:17]framework.database.initialize.after: mysql
+[2014-03-01 14:09:17]framework.cache.initialize.before: 
+[2014-03-01 14:09:17]framework.cache.initialize.after: filecache
+[2014-03-01 14:09:17]framework.session.initialize.before: 
+[2014-03-01 14:09:17]framework.session.initialize.after: server
+[2014-03-01 14:09:17]framework.security.initialize.before: 
+[2014-03-01 14:09:17]framework.security.initialize.after: 
+[2014-03-01 14:09:17]framework.router.findroute.before: /stepfour
+[2014-03-01 14:09:17]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:09:17]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:09:17]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:09:17]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:09:17]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:09:17]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:09:17]framework.controller.construct.after: App_Controller_Index
+Average: 0.0040001904761905, Longest: 0.027001, Shortest: 0.00099999999999995, Total: 0.101005
+[2014-03-01 14:09:17]framework.module.initialize.before: App
+[2014-03-01 14:09:17]framework.module.initialize.before: Admin
+[2014-03-01 14:09:17]framework.module.initialize.before: Cron
+[2014-03-01 14:09:17]framework.configuration.initialize.before: ini
+[2014-03-01 14:09:17]framework.configuration.initialize.after: ini
+[2014-03-01 14:09:17]framework.database.initialize.before: 
+[2014-03-01 14:09:17]framework.database.initialize.after: mysql
+[2014-03-01 14:09:17]framework.cache.initialize.before: 
+[2014-03-01 14:09:17]framework.cache.initialize.after: filecache
+[2014-03-01 14:09:17]framework.session.initialize.before: 
+[2014-03-01 14:09:17]framework.session.initialize.after: server
+[2014-03-01 14:09:17]framework.security.initialize.before: 
+[2014-03-01 14:09:17]framework.security.initialize.after: 
+[2014-03-01 14:09:17]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:09:17]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045336, Longest: 0.028001, Shortest: 0.001, Total: 0.073004
+[2014-03-01 14:09:30]framework.module.initialize.before: App
+[2014-03-01 14:09:30]framework.module.initialize.before: Admin
+[2014-03-01 14:09:30]framework.module.initialize.before: Cron
+[2014-03-01 14:09:30]framework.configuration.initialize.before: ini
+[2014-03-01 14:09:30]framework.configuration.initialize.after: ini
+[2014-03-01 14:09:30]framework.database.initialize.before: 
+[2014-03-01 14:09:30]framework.database.initialize.after: mysql
+[2014-03-01 14:09:30]framework.cache.initialize.before: 
+[2014-03-01 14:09:30]framework.cache.initialize.after: filecache
+[2014-03-01 14:09:30]framework.session.initialize.before: 
+[2014-03-01 14:09:30]framework.session.initialize.after: server
+[2014-03-01 14:09:30]framework.security.initialize.before: 
+[2014-03-01 14:09:30]framework.security.initialize.after: 
+[2014-03-01 14:09:30]framework.router.findroute.before: /stepfour
+[2014-03-01 14:09:30]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:09:30]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:09:30]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:09:30]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:09:30]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:09:30]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:09:30]framework.controller.construct.after: App_Controller_Index
+Average: 0.0038097142857143, Longest: 0.026001, Shortest: 0, Total: 0.097005
+[2014-03-01 14:09:30]framework.module.initialize.before: App
+[2014-03-01 14:09:30]framework.module.initialize.before: Admin
+[2014-03-01 14:09:30]framework.module.initialize.before: Cron
+[2014-03-01 14:09:30]framework.configuration.initialize.before: ini
+[2014-03-01 14:09:30]framework.configuration.initialize.after: ini
+[2014-03-01 14:09:30]framework.database.initialize.before: 
+[2014-03-01 14:09:30]framework.database.initialize.after: mysql
+[2014-03-01 14:09:30]framework.cache.initialize.before: 
+[2014-03-01 14:09:30]framework.cache.initialize.after: filecache
+[2014-03-01 14:09:30]framework.session.initialize.before: 
+[2014-03-01 14:09:30]framework.session.initialize.after: server
+[2014-03-01 14:09:30]framework.security.initialize.before: 
+[2014-03-01 14:09:30]framework.security.initialize.after: 
+[2014-03-01 14:09:30]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:09:30]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0038002, Longest: 0.025002, Shortest: 0.001, Total: 0.061003
+[2014-03-01 14:09:47]framework.module.initialize.before: App
+[2014-03-01 14:09:47]framework.module.initialize.before: Admin
+[2014-03-01 14:09:47]framework.module.initialize.before: Cron
+[2014-03-01 14:09:47]framework.configuration.initialize.before: ini
+[2014-03-01 14:09:47]framework.configuration.initialize.after: ini
+[2014-03-01 14:09:47]framework.database.initialize.before: 
+[2014-03-01 14:09:47]framework.database.initialize.after: mysql
+[2014-03-01 14:09:47]framework.cache.initialize.before: 
+[2014-03-01 14:09:47]framework.cache.initialize.after: filecache
+[2014-03-01 14:09:47]framework.session.initialize.before: 
+[2014-03-01 14:09:47]framework.session.initialize.after: server
+[2014-03-01 14:09:47]framework.security.initialize.before: 
+[2014-03-01 14:09:47]framework.security.initialize.after: 
+[2014-03-01 14:09:47]framework.router.findroute.before: /stepfour
+[2014-03-01 14:09:47]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:09:47]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:09:47]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:09:47]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:09:47]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:09:47]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:09:47]framework.controller.construct.after: App_Controller_Index
+Average: 0.0039525714285714, Longest: 0.027001, Shortest: 0, Total: 0.098005
+[2014-03-01 14:09:48]framework.module.initialize.before: App
+[2014-03-01 14:09:48]framework.module.initialize.before: Admin
+[2014-03-01 14:09:48]framework.module.initialize.before: Cron
+[2014-03-01 14:09:48]framework.configuration.initialize.before: ini
+[2014-03-01 14:09:48]framework.configuration.initialize.after: ini
+[2014-03-01 14:09:48]framework.database.initialize.before: 
+[2014-03-01 14:09:48]framework.database.initialize.after: mysql
+[2014-03-01 14:09:48]framework.cache.initialize.before: 
+[2014-03-01 14:09:48]framework.cache.initialize.after: filecache
+[2014-03-01 14:09:48]framework.session.initialize.before: 
+[2014-03-01 14:09:48]framework.session.initialize.after: server
+[2014-03-01 14:09:48]framework.security.initialize.before: 
+[2014-03-01 14:09:48]framework.security.initialize.after: 
+[2014-03-01 14:09:48]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:09:48]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: -0.062133133333333, Longest: 0.028002, Shortest: -0.994, Total: -0.926996
+[2014-03-01 14:10:21]framework.module.initialize.before: App
+[2014-03-01 14:10:21]framework.module.initialize.before: Admin
+[2014-03-01 14:10:21]framework.module.initialize.before: Cron
+[2014-03-01 14:10:21]framework.configuration.initialize.before: ini
+[2014-03-01 14:10:21]framework.configuration.initialize.after: ini
+[2014-03-01 14:10:21]framework.database.initialize.before: 
+[2014-03-01 14:10:21]framework.database.initialize.after: mysql
+[2014-03-01 14:10:21]framework.cache.initialize.before: 
+[2014-03-01 14:10:21]framework.cache.initialize.after: filecache
+[2014-03-01 14:10:21]framework.session.initialize.before: 
+[2014-03-01 14:10:21]framework.session.initialize.after: server
+[2014-03-01 14:10:21]framework.security.initialize.before: 
+[2014-03-01 14:10:21]framework.security.initialize.after: 
+[2014-03-01 14:10:21]framework.router.findroute.before: /stepfour
+[2014-03-01 14:10:21]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:10:21]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:10:21]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:10:21]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:10:21]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:10:21]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:10:21]framework.controller.construct.after: App_Controller_Index
+Average: 0.003524, Longest: 0.025001, Shortest: 0, Total: 0.090005
+[2014-03-01 14:10:22]framework.module.initialize.before: App
+[2014-03-01 14:10:22]framework.module.initialize.before: Admin
+[2014-03-01 14:10:22]framework.module.initialize.before: Cron
+[2014-03-01 14:10:22]framework.configuration.initialize.before: ini
+[2014-03-01 14:10:22]framework.configuration.initialize.after: ini
+[2014-03-01 14:10:22]framework.database.initialize.before: 
+[2014-03-01 14:10:22]framework.database.initialize.after: mysql
+[2014-03-01 14:10:22]framework.cache.initialize.before: 
+[2014-03-01 14:10:22]framework.cache.initialize.after: filecache
+[2014-03-01 14:10:22]framework.session.initialize.before: 
+[2014-03-01 14:10:22]framework.session.initialize.after: server
+[2014-03-01 14:10:22]framework.security.initialize.before: 
+[2014-03-01 14:10:22]framework.security.initialize.after: 
+[2014-03-01 14:10:22]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:10:22]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0040002, Longest: 0.027002, Shortest: 0, Total: 0.064003
+[2014-03-01 14:10:23]framework.module.initialize.before: App
+[2014-03-01 14:10:23]framework.module.initialize.before: Admin
+[2014-03-01 14:10:23]framework.module.initialize.before: Cron
+[2014-03-01 14:10:23]framework.configuration.initialize.before: ini
+[2014-03-01 14:10:23]framework.configuration.initialize.after: ini
+[2014-03-01 14:10:23]framework.database.initialize.before: 
+[2014-03-01 14:10:23]framework.database.initialize.after: mysql
+[2014-03-01 14:10:23]framework.cache.initialize.before: 
+[2014-03-01 14:10:23]framework.cache.initialize.after: filecache
+[2014-03-01 14:10:23]framework.session.initialize.before: 
+[2014-03-01 14:10:23]framework.session.initialize.after: server
+[2014-03-01 14:10:23]framework.security.initialize.before: 
+[2014-03-01 14:10:23]framework.security.initialize.after: 
+[2014-03-01 14:10:23]framework.router.findroute.before: /stepfour
+[2014-03-01 14:10:23]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:10:23]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:10:23]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:10:23]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:10:23]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:10:23]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:10:23]framework.controller.construct.after: App_Controller_Index
+Average: 0.003524, Longest: 0.025001, Shortest: 0, Total: 0.089005
+[2014-03-01 14:10:23]framework.module.initialize.before: App
+[2014-03-01 14:10:23]framework.module.initialize.before: Admin
+[2014-03-01 14:10:23]framework.module.initialize.before: Cron
+[2014-03-01 14:10:23]framework.configuration.initialize.before: ini
+[2014-03-01 14:10:23]framework.configuration.initialize.after: ini
+[2014-03-01 14:10:23]framework.database.initialize.before: 
+[2014-03-01 14:10:23]framework.database.initialize.after: mysql
+[2014-03-01 14:10:23]framework.cache.initialize.before: 
+[2014-03-01 14:10:23]framework.cache.initialize.after: filecache
+[2014-03-01 14:10:23]framework.session.initialize.before: 
+[2014-03-01 14:10:23]framework.session.initialize.after: server
+[2014-03-01 14:10:23]framework.security.initialize.before: 
+[2014-03-01 14:10:23]framework.security.initialize.after: 
+[2014-03-01 14:10:23]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:10:23]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0040002666666667, Longest: 0.027001, Shortest: 0, Total: 0.064004
+[2014-03-01 14:11:10]framework.module.initialize.before: App
+[2014-03-01 14:11:10]framework.module.initialize.before: Admin
+[2014-03-01 14:11:10]framework.module.initialize.before: Cron
+[2014-03-01 14:11:10]framework.configuration.initialize.before: ini
+[2014-03-01 14:11:10]framework.configuration.initialize.after: ini
+[2014-03-01 14:11:10]framework.database.initialize.before: 
+[2014-03-01 14:11:10]framework.database.initialize.after: mysql
+[2014-03-01 14:11:10]framework.cache.initialize.before: 
+[2014-03-01 14:11:10]framework.cache.initialize.after: filecache
+[2014-03-01 14:11:10]framework.session.initialize.before: 
+[2014-03-01 14:11:10]framework.session.initialize.after: server
+[2014-03-01 14:11:10]framework.security.initialize.before: 
+[2014-03-01 14:11:10]framework.security.initialize.after: 
+[2014-03-01 14:11:10]framework.router.findroute.before: /stepfour
+[2014-03-01 14:11:10]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:11:10]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:11:10]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:11:10]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:11:10]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:11:10]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:11:10]framework.controller.construct.after: App_Controller_Index
+Average: 0.003952619047619, Longest: 0.027002, Shortest: 0, Total: 0.098006
+[2014-03-01 14:11:11]framework.module.initialize.before: App
+[2014-03-01 14:11:11]framework.module.initialize.before: Admin
+[2014-03-01 14:11:11]framework.module.initialize.before: Cron
+[2014-03-01 14:11:11]framework.configuration.initialize.before: ini
+[2014-03-01 14:11:11]framework.configuration.initialize.after: ini
+[2014-03-01 14:11:11]framework.database.initialize.before: 
+[2014-03-01 14:11:11]framework.database.initialize.after: mysql
+[2014-03-01 14:11:11]framework.cache.initialize.before: 
+[2014-03-01 14:11:11]framework.cache.initialize.after: filecache
+[2014-03-01 14:11:11]framework.session.initialize.before: 
+[2014-03-01 14:11:11]framework.session.initialize.after: server
+[2014-03-01 14:11:11]framework.security.initialize.before: 
+[2014-03-01 14:11:11]framework.security.initialize.after: 
+[2014-03-01 14:11:11]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:11:11]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045336, Longest: 0.027002, Shortest: 0, Total: 0.073005
+[2014-03-01 14:12:57]framework.module.initialize.before: App
+[2014-03-01 14:12:57]framework.module.initialize.before: Admin
+[2014-03-01 14:12:57]framework.module.initialize.before: Cron
+[2014-03-01 14:12:57]framework.configuration.initialize.before: ini
+[2014-03-01 14:12:57]framework.configuration.initialize.after: ini
+[2014-03-01 14:12:57]framework.database.initialize.before: 
+[2014-03-01 14:12:57]framework.database.initialize.after: mysql
+[2014-03-01 14:12:57]framework.cache.initialize.before: 
+[2014-03-01 14:12:57]framework.cache.initialize.after: filecache
+[2014-03-01 14:12:57]framework.session.initialize.before: 
+[2014-03-01 14:12:57]framework.session.initialize.after: server
+[2014-03-01 14:12:57]framework.security.initialize.before: 
+[2014-03-01 14:12:57]framework.security.initialize.after: 
+[2014-03-01 14:12:57]framework.router.findroute.before: /stepfour
+[2014-03-01 14:12:57]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:12:57]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:12:57]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:12:57]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:12:57]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:12:57]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:12:57]framework.controller.construct.after: App_Controller_Index
+Average: 0.003857380952381, Longest: 0.026001, Shortest: 0.001, Total: 0.133008
+[2014-03-01 14:12:57]framework.module.initialize.before: App
+[2014-03-01 14:12:57]framework.module.initialize.before: Admin
+[2014-03-01 14:12:57]framework.module.initialize.before: Cron
+[2014-03-01 14:12:57]framework.configuration.initialize.before: ini
+[2014-03-01 14:12:57]framework.configuration.initialize.after: ini
+[2014-03-01 14:12:57]framework.database.initialize.before: 
+[2014-03-01 14:12:57]framework.database.initialize.after: mysql
+[2014-03-01 14:12:57]framework.cache.initialize.before: 
+[2014-03-01 14:12:57]framework.cache.initialize.after: filecache
+[2014-03-01 14:12:57]framework.session.initialize.before: 
+[2014-03-01 14:12:57]framework.session.initialize.after: server
+[2014-03-01 14:12:57]framework.security.initialize.before: 
+[2014-03-01 14:12:57]framework.security.initialize.after: 
+[2014-03-01 14:12:57]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:12:57]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0040002, Longest: 0.027002, Shortest: 0.00099999999999995, Total: 0.065003
+[2014-03-01 14:14:03]framework.module.initialize.before: App
+[2014-03-01 14:14:03]framework.module.initialize.before: Admin
+[2014-03-01 14:14:03]framework.module.initialize.before: Cron
+[2014-03-01 14:14:03]framework.configuration.initialize.before: ini
+[2014-03-01 14:14:03]framework.configuration.initialize.after: ini
+[2014-03-01 14:14:03]framework.database.initialize.before: 
+[2014-03-01 14:14:03]framework.database.initialize.after: mysql
+[2014-03-01 14:14:03]framework.cache.initialize.before: 
+[2014-03-01 14:14:03]framework.cache.initialize.after: filecache
+[2014-03-01 14:14:03]framework.session.initialize.before: 
+[2014-03-01 14:14:03]framework.session.initialize.after: server
+[2014-03-01 14:14:03]framework.security.initialize.before: 
+[2014-03-01 14:14:03]framework.security.initialize.after: 
+[2014-03-01 14:14:03]framework.router.findroute.before: /stepfour
+[2014-03-01 14:14:03]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 14:14:03]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 14:14:03]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:14:03]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 14:14:03]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:14:03]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 14:14:03]framework.controller.construct.after: App_Controller_Index
+Average: 0.0040002380952381, Longest: 0.027002, Shortest: 0, Total: 0.129008
+[2014-03-01 14:14:03]framework.module.initialize.before: App
+[2014-03-01 14:14:03]framework.module.initialize.before: Admin
+[2014-03-01 14:14:03]framework.module.initialize.before: Cron
+[2014-03-01 14:14:03]framework.configuration.initialize.before: ini
+[2014-03-01 14:14:03]framework.configuration.initialize.after: ini
+[2014-03-01 14:14:03]framework.database.initialize.before: 
+[2014-03-01 14:14:03]framework.database.initialize.after: mysql
+[2014-03-01 14:14:03]framework.cache.initialize.before: 
+[2014-03-01 14:14:03]framework.cache.initialize.after: filecache
+[2014-03-01 14:14:03]framework.session.initialize.before: 
+[2014-03-01 14:14:03]framework.session.initialize.after: server
+[2014-03-01 14:14:03]framework.security.initialize.before: 
+[2014-03-01 14:14:03]framework.security.initialize.after: 
+[2014-03-01 14:14:03]framework.router.findroute.before: /favicon.ico
+[2014-03-01 14:14:03]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0044669333333333, Longest: 0.027002, Shortest: 0, Total: -0.927996
+[2014-03-01 15:08:43]framework.module.initialize.before: App
+[2014-03-01 15:08:43]framework.module.initialize.before: Admin
+[2014-03-01 15:08:43]framework.module.initialize.before: Cron
+[2014-03-01 15:08:43]framework.configuration.initialize.before: ini
+[2014-03-01 15:08:43]framework.configuration.initialize.after: ini
+[2014-03-01 15:08:43]framework.database.initialize.before: 
+[2014-03-01 15:08:43]framework.database.initialize.after: mysql
+[2014-03-01 15:08:43]framework.cache.initialize.before: 
+[2014-03-01 15:08:43]framework.cache.initialize.after: filecache
+[2014-03-01 15:08:43]framework.session.initialize.before: 
+[2014-03-01 15:08:43]framework.session.initialize.after: server
+[2014-03-01 15:08:43]framework.security.initialize.before: 
+[2014-03-01 15:08:43]framework.security.initialize.after: 
+[2014-03-01 15:08:43]framework.router.findroute.before: /stepfour
+[2014-03-01 15:08:43]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 15:08:43]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:08:43]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:08:43]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:08:43]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 15:08:43]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 15:08:43]framework.controller.construct.after: App_Controller_Index
+Average: 0.0038097619047619, Longest: 0.027002, Shortest: 0, Total: 0.122007
+[2014-03-01 15:08:44]framework.module.initialize.before: App
+[2014-03-01 15:08:44]framework.module.initialize.before: Admin
+[2014-03-01 15:08:44]framework.module.initialize.before: Cron
+[2014-03-01 15:08:44]framework.configuration.initialize.before: ini
+[2014-03-01 15:08:44]framework.configuration.initialize.after: ini
+[2014-03-01 15:08:44]framework.database.initialize.before: 
+[2014-03-01 15:08:44]framework.database.initialize.after: mysql
+[2014-03-01 15:08:44]framework.cache.initialize.before: 
+[2014-03-01 15:08:44]framework.cache.initialize.after: filecache
+[2014-03-01 15:08:44]framework.session.initialize.before: 
+[2014-03-01 15:08:44]framework.session.initialize.after: server
+[2014-03-01 15:08:44]framework.security.initialize.before: 
+[2014-03-01 15:08:44]framework.security.initialize.after: 
+[2014-03-01 15:08:44]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:08:44]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0040002, Longest: 0.027002, Shortest: 0, Total: 0.064003
+[2014-03-01 15:10:51]framework.module.initialize.before: App
+[2014-03-01 15:10:51]framework.module.initialize.before: Admin
+[2014-03-01 15:10:51]framework.module.initialize.before: Cron
+[2014-03-01 15:10:51]framework.configuration.initialize.before: ini
+[2014-03-01 15:10:51]framework.configuration.initialize.after: ini
+[2014-03-01 15:10:51]framework.database.initialize.before: 
+[2014-03-01 15:10:51]framework.database.initialize.after: mysql
+[2014-03-01 15:10:51]framework.cache.initialize.before: 
+[2014-03-01 15:10:51]framework.cache.initialize.after: filecache
+[2014-03-01 15:10:51]framework.session.initialize.before: 
+[2014-03-01 15:10:51]framework.session.initialize.after: server
+[2014-03-01 15:10:51]framework.security.initialize.before: 
+[2014-03-01 15:10:51]framework.security.initialize.after: 
+[2014-03-01 15:10:51]framework.router.findroute.before: /stepfour
+[2014-03-01 15:10:51]framework.router.findroute.after: /stepfour, app, index, stepfour
+[2014-03-01 15:10:51]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:10:51]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:10:51]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:10:51]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 15:10:51]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/stepfour.phtml
+[2014-03-01 15:10:51]framework.controller.construct.after: App_Controller_Index
+Average: 0.0039526190476191, Longest: 0.026002, Shortest: 0.001, Total: 0.134008
+[2014-03-01 15:10:51]framework.module.initialize.before: App
+[2014-03-01 15:10:51]framework.module.initialize.before: Admin
+[2014-03-01 15:10:51]framework.module.initialize.before: Cron
+[2014-03-01 15:10:51]framework.configuration.initialize.before: ini
+[2014-03-01 15:10:51]framework.configuration.initialize.after: ini
+[2014-03-01 15:10:51]framework.database.initialize.before: 
+[2014-03-01 15:10:51]framework.database.initialize.after: mysql
+[2014-03-01 15:10:51]framework.cache.initialize.before: 
+[2014-03-01 15:10:51]framework.cache.initialize.after: filecache
+[2014-03-01 15:10:51]framework.session.initialize.before: 
+[2014-03-01 15:10:51]framework.session.initialize.after: server
+[2014-03-01 15:10:51]framework.security.initialize.before: 
+[2014-03-01 15:10:51]framework.security.initialize.after: 
+[2014-03-01 15:10:51]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:10:51]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0044668666666667, Longest: 0.026001, Shortest: 0.001, Total: 0.072004
+[2014-03-01 15:11:54]framework.module.initialize.before: App
+[2014-03-01 15:11:54]framework.module.initialize.before: Admin
+[2014-03-01 15:11:54]framework.module.initialize.before: Cron
+[2014-03-01 15:11:54]framework.configuration.initialize.before: ini
+[2014-03-01 15:11:54]framework.configuration.initialize.after: ini
+[2014-03-01 15:11:54]framework.database.initialize.before: 
+[2014-03-01 15:11:54]framework.database.initialize.after: mysql
+[2014-03-01 15:11:54]framework.cache.initialize.before: 
+[2014-03-01 15:11:54]framework.cache.initialize.after: filecache
+[2014-03-01 15:11:54]framework.session.initialize.before: 
+[2014-03-01 15:11:54]framework.session.initialize.after: server
+[2014-03-01 15:11:54]framework.security.initialize.before: 
+[2014-03-01 15:11:54]framework.security.initialize.after: 
+[2014-03-01 15:11:54]framework.router.findroute.before: /
+[2014-03-01 15:11:54]framework.router.findroute.after: /, app, index, index
+[2014-03-01 15:11:54]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:11:54]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:11:54]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:11:54]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:11:54]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:11:54]framework.controller.construct.after: App_Controller_Index
+Average: 0.0039525714285714, Longest: 0.027001, Shortest: 0, Total: 0.087005
+[2014-03-01 15:11:54]framework.module.initialize.before: App
+[2014-03-01 15:11:54]framework.module.initialize.before: Admin
+[2014-03-01 15:11:54]framework.module.initialize.before: Cron
+[2014-03-01 15:11:54]framework.configuration.initialize.before: ini
+[2014-03-01 15:11:54]framework.configuration.initialize.after: ini
+[2014-03-01 15:11:54]framework.database.initialize.before: 
+[2014-03-01 15:11:54]framework.database.initialize.after: mysql
+[2014-03-01 15:11:54]framework.cache.initialize.before: 
+[2014-03-01 15:11:54]framework.cache.initialize.after: filecache
+[2014-03-01 15:11:54]framework.session.initialize.before: 
+[2014-03-01 15:11:54]framework.session.initialize.after: server
+[2014-03-01 15:11:54]framework.security.initialize.before: 
+[2014-03-01 15:11:54]framework.security.initialize.after: 
+[2014-03-01 15:11:54]framework.router.findroute.before: /login
+[2014-03-01 15:11:54]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:11:54]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:11:54]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:11:54]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:11:54]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:11:54]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:11:54]framework.controller.construct.after: App_Controller_User
+Average: 0.0036192380952381, Longest: 0.026002, Shortest: 0, Total: 0.088005
+[2014-03-01 15:11:55]framework.module.initialize.before: App
+[2014-03-01 15:11:55]framework.module.initialize.before: Admin
+[2014-03-01 15:11:55]framework.module.initialize.before: Cron
+[2014-03-01 15:11:55]framework.configuration.initialize.before: ini
+[2014-03-01 15:11:55]framework.configuration.initialize.after: ini
+[2014-03-01 15:11:55]framework.database.initialize.before: 
+[2014-03-01 15:11:55]framework.database.initialize.after: mysql
+[2014-03-01 15:11:55]framework.cache.initialize.before: 
+[2014-03-01 15:11:55]framework.cache.initialize.after: filecache
+[2014-03-01 15:11:55]framework.session.initialize.before: 
+[2014-03-01 15:11:55]framework.session.initialize.after: server
+[2014-03-01 15:11:55]framework.security.initialize.before: 
+[2014-03-01 15:11:55]framework.security.initialize.after: 
+[2014-03-01 15:11:55]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:11:55]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046669333333333, Longest: 0.026002, Shortest: 0, Total: 0.075004
+[2014-03-01 15:12:24]framework.module.initialize.before: App
+[2014-03-01 15:12:24]framework.module.initialize.before: Admin
+[2014-03-01 15:12:24]framework.module.initialize.before: Cron
+[2014-03-01 15:12:24]framework.configuration.initialize.before: ini
+[2014-03-01 15:12:24]framework.configuration.initialize.after: ini
+[2014-03-01 15:12:24]framework.database.initialize.before: 
+[2014-03-01 15:12:24]framework.database.initialize.after: mysql
+[2014-03-01 15:12:24]framework.cache.initialize.before: 
+[2014-03-01 15:12:24]framework.cache.initialize.after: filecache
+[2014-03-01 15:12:24]framework.session.initialize.before: 
+[2014-03-01 15:12:24]framework.session.initialize.after: server
+[2014-03-01 15:12:24]framework.security.initialize.before: 
+[2014-03-01 15:12:24]framework.security.initialize.after: 
+[2014-03-01 15:12:24]framework.router.findroute.before: /login
+[2014-03-01 15:12:24]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:12:24]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:12:24]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:12:24]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:12:24]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:12:24]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:12:24]framework.controller.construct.after: App_Controller_User
+Average: 0.0040478571428571, Longest: 0.026002, Shortest: 0, Total: 0.122007
+[2014-03-01 15:12:24]framework.module.initialize.before: App
+[2014-03-01 15:12:24]framework.module.initialize.before: Admin
+[2014-03-01 15:12:24]framework.module.initialize.before: Cron
+[2014-03-01 15:12:24]framework.configuration.initialize.before: ini
+[2014-03-01 15:12:24]framework.configuration.initialize.after: ini
+[2014-03-01 15:12:24]framework.database.initialize.before: 
+[2014-03-01 15:12:24]framework.database.initialize.after: mysql
+[2014-03-01 15:12:24]framework.cache.initialize.before: 
+[2014-03-01 15:12:24]framework.cache.initialize.after: filecache
+[2014-03-01 15:12:24]framework.session.initialize.before: 
+[2014-03-01 15:12:24]framework.session.initialize.after: server
+[2014-03-01 15:12:24]framework.security.initialize.before: 
+[2014-03-01 15:12:24]framework.security.initialize.after: 
+[2014-03-01 15:12:24]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:12:24]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045336, Longest: 0.027001, Shortest: 0, Total: 0.073004
+[2014-03-01 15:12:51]framework.module.initialize.before: App
+[2014-03-01 15:12:51]framework.module.initialize.before: Admin
+[2014-03-01 15:12:51]framework.module.initialize.before: Cron
+[2014-03-01 15:12:51]framework.configuration.initialize.before: ini
+[2014-03-01 15:12:51]framework.configuration.initialize.after: ini
+[2014-03-01 15:12:51]framework.database.initialize.before: 
+[2014-03-01 15:12:51]framework.database.initialize.after: mysql
+[2014-03-01 15:12:51]framework.cache.initialize.before: 
+[2014-03-01 15:12:51]framework.cache.initialize.after: filecache
+[2014-03-01 15:12:51]framework.session.initialize.before: 
+[2014-03-01 15:12:51]framework.session.initialize.after: server
+[2014-03-01 15:12:51]framework.security.initialize.before: 
+[2014-03-01 15:12:51]framework.security.initialize.after: 
+[2014-03-01 15:12:51]framework.router.findroute.before: /login
+[2014-03-01 15:12:51]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:12:51]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:12:51]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:12:52]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:12:52]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:12:52]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:12:52]framework.controller.construct.after: App_Controller_User
+Average: -0.043666428571429, Longest: 0.026001, Shortest: -0.995, Total: -0.893994
+[2014-03-01 15:12:52]framework.module.initialize.before: App
+[2014-03-01 15:12:52]framework.module.initialize.before: Admin
+[2014-03-01 15:12:52]framework.module.initialize.before: Cron
+[2014-03-01 15:12:52]framework.configuration.initialize.before: ini
+[2014-03-01 15:12:52]framework.configuration.initialize.after: ini
+[2014-03-01 15:12:52]framework.database.initialize.before: 
+[2014-03-01 15:12:52]framework.database.initialize.after: mysql
+[2014-03-01 15:12:52]framework.cache.initialize.before: 
+[2014-03-01 15:12:52]framework.cache.initialize.after: filecache
+[2014-03-01 15:12:52]framework.session.initialize.before: 
+[2014-03-01 15:12:52]framework.session.initialize.after: server
+[2014-03-01 15:12:52]framework.security.initialize.before: 
+[2014-03-01 15:12:52]framework.security.initialize.after: 
+[2014-03-01 15:12:52]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:12:52]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046669333333333, Longest: 0.029002, Shortest: 0, Total: 0.075004
+[2014-03-01 15:13:55]framework.module.initialize.before: App
+[2014-03-01 15:13:55]framework.module.initialize.before: Admin
+[2014-03-01 15:13:55]framework.module.initialize.before: Cron
+[2014-03-01 15:13:55]framework.configuration.initialize.before: ini
+[2014-03-01 15:13:55]framework.configuration.initialize.after: ini
+[2014-03-01 15:13:55]framework.database.initialize.before: 
+[2014-03-01 15:13:55]framework.database.initialize.after: mysql
+[2014-03-01 15:13:55]framework.cache.initialize.before: 
+[2014-03-01 15:13:55]framework.cache.initialize.after: filecache
+[2014-03-01 15:13:55]framework.session.initialize.before: 
+[2014-03-01 15:13:55]framework.session.initialize.after: server
+[2014-03-01 15:13:55]framework.security.initialize.before: 
+[2014-03-01 15:13:55]framework.security.initialize.after: 
+[2014-03-01 15:13:55]framework.router.findroute.before: /
+[2014-03-01 15:13:55]framework.router.findroute.after: /, app, index, index
+[2014-03-01 15:13:55]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:13:55]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:13:55]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:13:55]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:13:55]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:13:55]framework.controller.construct.after: App_Controller_Index
+Average: 0.0040478571428571, Longest: 0.026001, Shortest: 0, Total: 0.088005
+[2014-03-01 15:13:55]framework.module.initialize.before: App
+[2014-03-01 15:13:55]framework.module.initialize.before: Admin
+[2014-03-01 15:13:55]framework.module.initialize.before: Cron
+[2014-03-01 15:13:55]framework.configuration.initialize.before: ini
+[2014-03-01 15:13:55]framework.configuration.initialize.after: ini
+[2014-03-01 15:13:55]framework.database.initialize.before: 
+[2014-03-01 15:13:55]framework.database.initialize.after: mysql
+[2014-03-01 15:13:55]framework.cache.initialize.before: 
+[2014-03-01 15:13:55]framework.cache.initialize.after: filecache
+[2014-03-01 15:13:55]framework.session.initialize.before: 
+[2014-03-01 15:13:55]framework.session.initialize.after: server
+[2014-03-01 15:13:55]framework.security.initialize.before: 
+[2014-03-01 15:13:55]framework.security.initialize.after: 
+[2014-03-01 15:13:55]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:13:55]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046002666666667, Longest: 0.028001, Shortest: 0, Total: 0.074004
+[2014-03-01 15:16:43]framework.module.initialize.before: App
+[2014-03-01 15:16:43]framework.module.initialize.before: Admin
+[2014-03-01 15:16:43]framework.module.initialize.before: Cron
+[2014-03-01 15:16:43]framework.configuration.initialize.before: ini
+[2014-03-01 15:16:43]framework.configuration.initialize.after: ini
+[2014-03-01 15:16:43]framework.database.initialize.before: 
+[2014-03-01 15:16:43]framework.database.initialize.after: mysql
+[2014-03-01 15:16:43]framework.cache.initialize.before: 
+[2014-03-01 15:16:43]framework.cache.initialize.after: filecache
+[2014-03-01 15:16:43]framework.session.initialize.before: 
+[2014-03-01 15:16:43]framework.session.initialize.after: server
+[2014-03-01 15:16:43]framework.security.initialize.before: 
+[2014-03-01 15:16:43]framework.security.initialize.after: 
+[2014-03-01 15:16:43]framework.router.findroute.before: /
+[2014-03-01 15:16:43]framework.router.findroute.after: /, app, index, index
+[2014-03-01 15:16:43]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:16:43]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:16:43]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:16:43]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:16:43]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:16:43]framework.controller.construct.after: App_Controller_Index
+Average: 0.0040478571428571, Longest: 0.026001, Shortest: 0.001, Total: 0.097006
+[2014-03-01 15:16:43]framework.module.initialize.before: App
+[2014-03-01 15:16:43]framework.module.initialize.before: Admin
+[2014-03-01 15:16:43]framework.module.initialize.before: Cron
+[2014-03-01 15:16:43]framework.configuration.initialize.before: ini
+[2014-03-01 15:16:43]framework.configuration.initialize.after: ini
+[2014-03-01 15:16:43]framework.database.initialize.before: 
+[2014-03-01 15:16:43]framework.database.initialize.after: mysql
+[2014-03-01 15:16:43]framework.cache.initialize.before: 
+[2014-03-01 15:16:43]framework.cache.initialize.after: filecache
+[2014-03-01 15:16:43]framework.session.initialize.before: 
+[2014-03-01 15:16:43]framework.session.initialize.after: server
+[2014-03-01 15:16:43]framework.security.initialize.before: 
+[2014-03-01 15:16:43]framework.security.initialize.after: 
+[2014-03-01 15:16:43]framework.router.findroute.before: /login
+[2014-03-01 15:16:43]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:16:43]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:16:43]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:16:43]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:16:43]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:16:43]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:16:43]framework.controller.construct.after: App_Controller_User
+Average: 0.0039525714285714, Longest: 0.026001, Shortest: 0, Total: 0.087005
+[2014-03-01 15:16:43]framework.module.initialize.before: App
+[2014-03-01 15:16:43]framework.module.initialize.before: Admin
+[2014-03-01 15:16:43]framework.module.initialize.before: Cron
+[2014-03-01 15:16:43]framework.configuration.initialize.before: ini
+[2014-03-01 15:16:43]framework.configuration.initialize.after: ini
+[2014-03-01 15:16:43]framework.database.initialize.before: 
+[2014-03-01 15:16:43]framework.database.initialize.after: mysql
+[2014-03-01 15:16:43]framework.cache.initialize.before: 
+[2014-03-01 15:16:43]framework.cache.initialize.after: filecache
+[2014-03-01 15:16:43]framework.session.initialize.before: 
+[2014-03-01 15:16:43]framework.session.initialize.after: server
+[2014-03-01 15:16:43]framework.security.initialize.before: 
+[2014-03-01 15:16:43]framework.security.initialize.after: 
+[2014-03-01 15:16:43]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:16:43]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045336, Longest: 0.027002, Shortest: 0.001, Total: 0.073004
+[2014-03-01 15:17:27]framework.module.initialize.before: App
+[2014-03-01 15:17:27]framework.module.initialize.before: Admin
+[2014-03-01 15:17:27]framework.module.initialize.before: Cron
+[2014-03-01 15:17:27]framework.configuration.initialize.before: ini
+[2014-03-01 15:17:27]framework.configuration.initialize.after: ini
+[2014-03-01 15:17:27]framework.database.initialize.before: 
+[2014-03-01 15:17:27]framework.database.initialize.after: mysql
+[2014-03-01 15:17:27]framework.cache.initialize.before: 
+[2014-03-01 15:17:27]framework.cache.initialize.after: filecache
+[2014-03-01 15:17:27]framework.session.initialize.before: 
+[2014-03-01 15:17:27]framework.session.initialize.after: server
+[2014-03-01 15:17:27]framework.security.initialize.before: 
+[2014-03-01 15:17:27]framework.security.initialize.after: 
+[2014-03-01 15:17:27]framework.router.findroute.before: /login
+[2014-03-01 15:17:27]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:17:27]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:17:27]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:17:27]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:17:27]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:17:27]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:17:27]framework.controller.construct.after: App_Controller_User
+Average: 0.0041907142857143, Longest: 0.027001, Shortest: 0, Total: 0.109006
+[2014-03-01 15:17:28]framework.module.initialize.before: App
+[2014-03-01 15:17:28]framework.module.initialize.before: Admin
+[2014-03-01 15:17:28]framework.module.initialize.before: Cron
+[2014-03-01 15:17:28]framework.configuration.initialize.before: ini
+[2014-03-01 15:17:28]framework.configuration.initialize.after: ini
+[2014-03-01 15:17:28]framework.database.initialize.before: 
+[2014-03-01 15:17:28]framework.database.initialize.after: mysql
+[2014-03-01 15:17:28]framework.cache.initialize.before: 
+[2014-03-01 15:17:28]framework.cache.initialize.after: filecache
+[2014-03-01 15:17:28]framework.session.initialize.before: 
+[2014-03-01 15:17:28]framework.session.initialize.after: server
+[2014-03-01 15:17:28]framework.security.initialize.before: 
+[2014-03-01 15:17:28]framework.security.initialize.after: 
+[2014-03-01 15:17:28]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:17:28]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046669333333333, Longest: 0.028001, Shortest: 0, Total: 0.075004
+[2014-03-01 15:19:19]framework.module.initialize.before: App
+[2014-03-01 15:19:19]framework.module.initialize.before: Admin
+[2014-03-01 15:19:19]framework.module.initialize.before: Cron
+[2014-03-01 15:19:19]framework.configuration.initialize.before: ini
+[2014-03-01 15:19:19]framework.configuration.initialize.after: ini
+[2014-03-01 15:19:19]framework.database.initialize.before: 
+[2014-03-01 15:19:19]framework.database.initialize.after: mysql
+[2014-03-01 15:19:19]framework.cache.initialize.before: 
+[2014-03-01 15:19:19]framework.cache.initialize.after: filecache
+[2014-03-01 15:19:19]framework.session.initialize.before: 
+[2014-03-01 15:19:19]framework.session.initialize.after: server
+[2014-03-01 15:19:19]framework.security.initialize.before: 
+[2014-03-01 15:19:19]framework.security.initialize.after: 
+[2014-03-01 15:19:20]framework.router.findroute.before: /login
+[2014-03-01 15:19:20]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:19:20]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:19:20]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:19:20]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:19:20]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:19:20]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:19:20]framework.controller.construct.after: App_Controller_User
+Average: -0.043571238095238, Longest: 0.006, Shortest: -0.972998, Total: -0.884994
+[2014-03-01 15:19:20]framework.module.initialize.before: App
+[2014-03-01 15:19:20]framework.module.initialize.before: Admin
+[2014-03-01 15:19:20]framework.module.initialize.before: Cron
+[2014-03-01 15:19:20]framework.configuration.initialize.before: ini
+[2014-03-01 15:19:20]framework.configuration.initialize.after: ini
+[2014-03-01 15:19:20]framework.database.initialize.before: 
+[2014-03-01 15:19:20]framework.database.initialize.after: mysql
+[2014-03-01 15:19:20]framework.cache.initialize.before: 
+[2014-03-01 15:19:20]framework.cache.initialize.after: filecache
+[2014-03-01 15:19:20]framework.session.initialize.before: 
+[2014-03-01 15:19:20]framework.session.initialize.after: server
+[2014-03-01 15:19:20]framework.security.initialize.before: 
+[2014-03-01 15:19:20]framework.security.initialize.after: 
+[2014-03-01 15:19:20]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:19:20]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046669333333333, Longest: 0.029001, Shortest: 0, Total: 0.074004
+[2014-03-01 15:20:29]framework.module.initialize.before: App
+[2014-03-01 15:20:29]framework.module.initialize.before: Admin
+[2014-03-01 15:20:29]framework.module.initialize.before: Cron
+[2014-03-01 15:20:29]framework.configuration.initialize.before: ini
+[2014-03-01 15:20:29]framework.configuration.initialize.after: ini
+[2014-03-01 15:20:29]framework.database.initialize.before: 
+[2014-03-01 15:20:29]framework.database.initialize.after: mysql
+[2014-03-01 15:20:29]framework.cache.initialize.before: 
+[2014-03-01 15:20:29]framework.cache.initialize.after: filecache
+[2014-03-01 15:20:29]framework.session.initialize.before: 
+[2014-03-01 15:20:29]framework.session.initialize.after: server
+[2014-03-01 15:20:29]framework.security.initialize.before: 
+[2014-03-01 15:20:29]framework.security.initialize.after: 
+[2014-03-01 15:20:29]framework.router.findroute.before: /login
+[2014-03-01 15:20:29]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:20:29]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:20:29]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:20:29]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:20:29]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:20:29]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:20:29]framework.controller.construct.after: App_Controller_User
+Average: 0.0040954761904762, Longest: 0.027002, Shortest: 0.001, Total: 0.091005
+[2014-03-01 15:20:30]framework.module.initialize.before: App
+[2014-03-01 15:20:30]framework.module.initialize.before: Admin
+[2014-03-01 15:20:30]framework.module.initialize.before: Cron
+[2014-03-01 15:20:30]framework.configuration.initialize.before: ini
+[2014-03-01 15:20:30]framework.configuration.initialize.after: ini
+[2014-03-01 15:20:30]framework.database.initialize.before: 
+[2014-03-01 15:20:30]framework.database.initialize.after: mysql
+[2014-03-01 15:20:30]framework.cache.initialize.before: 
+[2014-03-01 15:20:30]framework.cache.initialize.after: filecache
+[2014-03-01 15:20:30]framework.session.initialize.before: 
+[2014-03-01 15:20:30]framework.session.initialize.after: server
+[2014-03-01 15:20:30]framework.security.initialize.before: 
+[2014-03-01 15:20:30]framework.security.initialize.after: 
+[2014-03-01 15:20:30]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:20:30]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045335333333333, Longest: 0.027002, Shortest: 0.001, Total: 0.073004
+[2014-03-01 15:20:39]framework.module.initialize.before: App
+[2014-03-01 15:20:39]framework.module.initialize.before: Admin
+[2014-03-01 15:20:39]framework.module.initialize.before: Cron
+[2014-03-01 15:20:39]framework.configuration.initialize.before: ini
+[2014-03-01 15:20:39]framework.configuration.initialize.after: ini
+[2014-03-01 15:20:39]framework.database.initialize.before: 
+[2014-03-01 15:20:39]framework.database.initialize.after: mysql
+[2014-03-01 15:20:39]framework.cache.initialize.before: 
+[2014-03-01 15:20:39]framework.cache.initialize.after: filecache
+[2014-03-01 15:20:39]framework.session.initialize.before: 
+[2014-03-01 15:20:39]framework.session.initialize.after: server
+[2014-03-01 15:20:39]framework.security.initialize.before: 
+[2014-03-01 15:20:39]framework.security.initialize.after: 
+[2014-03-01 15:20:39]framework.router.findroute.before: /login
+[2014-03-01 15:20:39]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:20:39]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:20:39]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:20:39]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:20:39]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:20:39]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:20:39]framework.controller.construct.after: App_Controller_User
+Average: 0.0040478571428571, Longest: 0.027001, Shortest: 0, Total: 0.106006
+[2014-03-01 15:20:39]framework.module.initialize.before: App
+[2014-03-01 15:20:39]framework.module.initialize.before: Admin
+[2014-03-01 15:20:39]framework.module.initialize.before: Cron
+[2014-03-01 15:20:39]framework.configuration.initialize.before: ini
+[2014-03-01 15:20:39]framework.configuration.initialize.after: ini
+[2014-03-01 15:20:39]framework.database.initialize.before: 
+[2014-03-01 15:20:39]framework.database.initialize.after: mysql
+[2014-03-01 15:20:39]framework.cache.initialize.before: 
+[2014-03-01 15:20:39]framework.cache.initialize.after: filecache
+[2014-03-01 15:20:39]framework.session.initialize.before: 
+[2014-03-01 15:20:39]framework.session.initialize.after: server
+[2014-03-01 15:20:39]framework.security.initialize.before: 
+[2014-03-01 15:20:39]framework.security.initialize.after: 
+[2014-03-01 15:20:39]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:20:39]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046002666666667, Longest: 0.028001, Shortest: 0.00099999999999989, Total: 0.073004
+[2014-03-01 15:23:02]framework.module.initialize.before: App
+[2014-03-01 15:23:02]framework.module.initialize.before: Admin
+[2014-03-01 15:23:02]framework.module.initialize.before: Cron
+[2014-03-01 15:23:02]framework.configuration.initialize.before: ini
+[2014-03-01 15:23:02]framework.configuration.initialize.after: ini
+[2014-03-01 15:23:02]framework.database.initialize.before: 
+[2014-03-01 15:23:02]framework.database.initialize.after: mysql
+[2014-03-01 15:23:02]framework.cache.initialize.before: 
+[2014-03-01 15:23:02]framework.cache.initialize.after: filecache
+[2014-03-01 15:23:02]framework.session.initialize.before: 
+[2014-03-01 15:23:02]framework.session.initialize.after: server
+[2014-03-01 15:23:02]framework.security.initialize.before: 
+[2014-03-01 15:23:02]framework.security.initialize.after: 
+[2014-03-01 15:23:02]framework.router.findroute.before: /login
+[2014-03-01 15:23:02]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:23:02]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:23:02]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:23:02]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:23:02]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:23:02]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:23:02]framework.controller.construct.after: App_Controller_User
+Average: 0.0041430952380952, Longest: 0.026001, Shortest: 0.00099999999999999, Total: 0.091005
+[2014-03-01 15:23:02]framework.module.initialize.before: App
+[2014-03-01 15:23:02]framework.module.initialize.before: Admin
+[2014-03-01 15:23:02]framework.module.initialize.before: Cron
+[2014-03-01 15:23:02]framework.configuration.initialize.before: ini
+[2014-03-01 15:23:02]framework.configuration.initialize.after: ini
+[2014-03-01 15:23:02]framework.database.initialize.before: 
+[2014-03-01 15:23:02]framework.database.initialize.after: mysql
+[2014-03-01 15:23:02]framework.cache.initialize.before: 
+[2014-03-01 15:23:02]framework.cache.initialize.after: filecache
+[2014-03-01 15:23:02]framework.session.initialize.before: 
+[2014-03-01 15:23:02]framework.session.initialize.after: server
+[2014-03-01 15:23:02]framework.security.initialize.before: 
+[2014-03-01 15:23:02]framework.security.initialize.after: 
+[2014-03-01 15:23:02]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:23:02]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0046002666666667, Longest: 0.026002, Shortest: 0, Total: 0.074004
+[2014-03-01 15:23:07]framework.module.initialize.before: App
+[2014-03-01 15:23:07]framework.module.initialize.before: Admin
+[2014-03-01 15:23:07]framework.module.initialize.before: Cron
+[2014-03-01 15:23:07]framework.configuration.initialize.before: ini
+[2014-03-01 15:23:07]framework.configuration.initialize.after: ini
+[2014-03-01 15:23:07]framework.database.initialize.before: 
+[2014-03-01 15:23:07]framework.database.initialize.after: mysql
+[2014-03-01 15:23:07]framework.cache.initialize.before: 
+[2014-03-01 15:23:07]framework.cache.initialize.after: filecache
+[2014-03-01 15:23:07]framework.session.initialize.before: 
+[2014-03-01 15:23:07]framework.session.initialize.after: server
+[2014-03-01 15:23:07]framework.security.initialize.before: 
+[2014-03-01 15:23:07]framework.security.initialize.after: 
+[2014-03-01 15:23:07]framework.router.findroute.before: /login
+[2014-03-01 15:23:07]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:23:07]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:23:07]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:23:07]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:23:07]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:23:07]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:23:07]framework.controller.construct.after: App_Controller_User
+Average: 0.003952619047619, Longest: 0.026001, Shortest: 0, Total: 0.097005
+[2014-03-01 15:23:07]framework.module.initialize.before: App
+[2014-03-01 15:23:07]framework.module.initialize.before: Admin
+[2014-03-01 15:23:07]framework.module.initialize.before: Cron
+[2014-03-01 15:23:07]framework.configuration.initialize.before: ini
+[2014-03-01 15:23:07]framework.configuration.initialize.after: ini
+[2014-03-01 15:23:07]framework.database.initialize.before: 
+[2014-03-01 15:23:07]framework.database.initialize.after: mysql
+[2014-03-01 15:23:07]framework.cache.initialize.before: 
+[2014-03-01 15:23:07]framework.cache.initialize.after: filecache
+[2014-03-01 15:23:07]framework.session.initialize.before: 
+[2014-03-01 15:23:07]framework.session.initialize.after: server
+[2014-03-01 15:23:07]framework.security.initialize.before: 
+[2014-03-01 15:23:07]framework.security.initialize.after: 
+[2014-03-01 15:23:07]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:23:07]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0045336, Longest: 0.027002, Shortest: 0.001, Total: 0.073005
+[2014-03-01 15:25:26]framework.module.initialize.before: App
+[2014-03-01 15:25:26]framework.module.initialize.before: Admin
+[2014-03-01 15:25:26]framework.module.initialize.before: Cron
+[2014-03-01 15:25:26]framework.configuration.initialize.before: ini
+[2014-03-01 15:25:26]framework.configuration.initialize.after: ini
+[2014-03-01 15:25:26]framework.database.initialize.before: 
+[2014-03-01 15:25:26]framework.database.initialize.after: mysql
+[2014-03-01 15:25:27]framework.cache.initialize.before: 
+[2014-03-01 15:25:27]framework.cache.initialize.after: filecache
+[2014-03-01 15:25:27]framework.session.initialize.before: 
+[2014-03-01 15:25:27]framework.session.initialize.after: server
+[2014-03-01 15:25:27]framework.security.initialize.before: 
+[2014-03-01 15:25:27]framework.security.initialize.after: 
+[2014-03-01 15:25:27]framework.router.findroute.before: /
+[2014-03-01 15:25:27]framework.router.findroute.after: /, app, index, index
+[2014-03-01 15:25:27]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:25:27]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:25:27]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:25:27]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:25:27]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:25:27]framework.controller.construct.after: App_Controller_Index
+Average: -0.043571238095238, Longest: 0.027001, Shortest: -0.995, Total: -0.900995
+[2014-03-01 15:25:27]framework.module.initialize.before: App
+[2014-03-01 15:25:27]framework.module.initialize.before: Admin
+[2014-03-01 15:25:27]framework.module.initialize.before: Cron
+[2014-03-01 15:25:27]framework.configuration.initialize.before: ini
+[2014-03-01 15:25:27]framework.configuration.initialize.after: ini
+[2014-03-01 15:25:27]framework.database.initialize.before: 
+[2014-03-01 15:25:27]framework.database.initialize.after: mysql
+[2014-03-01 15:25:27]framework.cache.initialize.before: 
+[2014-03-01 15:25:27]framework.cache.initialize.after: filecache
+[2014-03-01 15:25:27]framework.session.initialize.before: 
+[2014-03-01 15:25:27]framework.session.initialize.after: server
+[2014-03-01 15:25:27]framework.security.initialize.before: 
+[2014-03-01 15:25:27]framework.security.initialize.after: 
+[2014-03-01 15:25:27]framework.router.findroute.before: /login
+[2014-03-01 15:25:27]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:25:27]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:25:27]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:25:27]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:25:27]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:25:27]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:25:27]framework.controller.construct.after: App_Controller_User
+Average: 0.0040002380952381, Longest: 0.026002, Shortest: 0, Total: 0.097006
+[2014-03-01 15:25:27]framework.module.initialize.before: App
+[2014-03-01 15:25:27]framework.module.initialize.before: Admin
+[2014-03-01 15:25:27]framework.module.initialize.before: Cron
+[2014-03-01 15:25:27]framework.configuration.initialize.before: ini
+[2014-03-01 15:25:27]framework.configuration.initialize.after: ini
+[2014-03-01 15:25:27]framework.database.initialize.before: 
+[2014-03-01 15:25:27]framework.database.initialize.after: mysql
+[2014-03-01 15:25:27]framework.cache.initialize.before: 
+[2014-03-01 15:25:27]framework.cache.initialize.after: filecache
+[2014-03-01 15:25:27]framework.session.initialize.before: 
+[2014-03-01 15:25:27]framework.session.initialize.after: server
+[2014-03-01 15:25:27]framework.security.initialize.before: 
+[2014-03-01 15:25:27]framework.security.initialize.after: 
+[2014-03-01 15:25:27]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:25:27]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0048003333333333, Longest: 0.030002, Shortest: 0.00099999999999995, Total: 0.077005
+[2014-03-01 15:25:31]framework.module.initialize.before: App
+[2014-03-01 15:25:31]framework.module.initialize.before: Admin
+[2014-03-01 15:25:31]framework.module.initialize.before: Cron
+[2014-03-01 15:25:31]framework.configuration.initialize.before: ini
+[2014-03-01 15:25:31]framework.configuration.initialize.after: ini
+[2014-03-01 15:25:31]framework.database.initialize.before: 
+[2014-03-01 15:25:31]framework.database.initialize.after: mysql
+[2014-03-01 15:25:31]framework.cache.initialize.before: 
+[2014-03-01 15:25:31]framework.cache.initialize.after: filecache
+[2014-03-01 15:25:31]framework.session.initialize.before: 
+[2014-03-01 15:25:31]framework.session.initialize.after: server
+[2014-03-01 15:25:31]framework.security.initialize.before: 
+[2014-03-01 15:25:31]framework.security.initialize.after: 
+[2014-03-01 15:25:31]framework.router.findroute.before: /login
+[2014-03-01 15:25:31]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:25:31]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:25:31]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:25:31]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:25:31]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:25:31]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:25:31]framework.controller.construct.after: App_Controller_User
+Average: 0.003952619047619, Longest: 0.026002, Shortest: 0, Total: 0.105006
+[2014-03-01 15:25:31]framework.module.initialize.before: App
+[2014-03-01 15:25:31]framework.module.initialize.before: Admin
+[2014-03-01 15:25:31]framework.module.initialize.before: Cron
+[2014-03-01 15:25:31]framework.configuration.initialize.before: ini
+[2014-03-01 15:25:31]framework.configuration.initialize.after: ini
+[2014-03-01 15:25:31]framework.database.initialize.before: 
+[2014-03-01 15:25:31]framework.database.initialize.after: mysql
+[2014-03-01 15:25:31]framework.cache.initialize.before: 
+[2014-03-01 15:25:31]framework.cache.initialize.after: filecache
+[2014-03-01 15:25:31]framework.session.initialize.before: 
+[2014-03-01 15:25:31]framework.session.initialize.after: server
+[2014-03-01 15:25:31]framework.security.initialize.before: 
+[2014-03-01 15:25:31]framework.security.initialize.after: 
+[2014-03-01 15:25:31]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:25:31]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0044669333333333, Longest: 0.026002, Shortest: 0.001, Total: 0.072004
+[2014-03-01 15:27:35]framework.module.initialize.before: App
+[2014-03-01 15:27:35]framework.module.initialize.before: Admin
+[2014-03-01 15:27:35]framework.module.initialize.before: Cron
+[2014-03-01 15:27:35]framework.configuration.initialize.before: ini
+[2014-03-01 15:27:35]framework.configuration.initialize.after: ini
+[2014-03-01 15:27:35]framework.database.initialize.before: 
+[2014-03-01 15:27:35]framework.database.initialize.after: mysql
+[2014-03-01 15:27:35]framework.cache.initialize.before: 
+[2014-03-01 15:27:35]framework.cache.initialize.after: filecache
+[2014-03-01 15:27:35]framework.session.initialize.before: 
+[2014-03-01 15:27:35]framework.session.initialize.after: server
+[2014-03-01 15:27:35]framework.security.initialize.before: 
+[2014-03-01 15:27:35]framework.security.initialize.after: 
+[2014-03-01 15:27:36]framework.router.findroute.before: /login
+[2014-03-01 15:27:36]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:27:36]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:27:36]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:27:36]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:27:36]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:27:36]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:27:36]framework.controller.construct.after: App_Controller_User
+Average: -0.04357119047619, Longest: 0.007, Shortest: -0.973998, Total: -0.867992
+[2014-03-01 15:27:36]framework.module.initialize.before: App
+[2014-03-01 15:27:36]framework.module.initialize.before: Admin
+[2014-03-01 15:27:36]framework.module.initialize.before: Cron
+[2014-03-01 15:27:36]framework.configuration.initialize.before: ini
+[2014-03-01 15:27:36]framework.configuration.initialize.after: ini
+[2014-03-01 15:27:36]framework.database.initialize.before: 
+[2014-03-01 15:27:36]framework.database.initialize.after: mysql
+[2014-03-01 15:27:36]framework.cache.initialize.before: 
+[2014-03-01 15:27:36]framework.cache.initialize.after: filecache
+[2014-03-01 15:27:36]framework.session.initialize.before: 
+[2014-03-01 15:27:36]framework.session.initialize.after: server
+[2014-03-01 15:27:36]framework.security.initialize.before: 
+Average: 0.0032501666666667, Longest: 0.008001, Shortest: 0.001, Total: 0.059003
+[2014-03-01 15:30:25]framework.module.initialize.before: App
+[2014-03-01 15:30:25]framework.module.initialize.before: Admin
+[2014-03-01 15:30:25]framework.module.initialize.before: Cron
+[2014-03-01 15:30:25]framework.configuration.initialize.before: ini
+[2014-03-01 15:30:25]framework.configuration.initialize.after: ini
+[2014-03-01 15:30:25]framework.database.initialize.before: 
+[2014-03-01 15:30:25]framework.database.initialize.after: mysql
+[2014-03-01 15:30:25]framework.cache.initialize.before: 
+[2014-03-01 15:30:25]framework.cache.initialize.after: filecache
+[2014-03-01 15:30:25]framework.session.initialize.before: 
+[2014-03-01 15:30:25]framework.session.initialize.after: server
+[2014-03-01 15:30:25]framework.security.initialize.before: 
+Average: 0.0030835, Longest: 0.007001, Shortest: 0, Total: 0.061003
+[2014-03-01 15:30:25]framework.module.initialize.before: App
+[2014-03-01 15:30:25]framework.module.initialize.before: Admin
+[2014-03-01 15:30:25]framework.module.initialize.before: Cron
+[2014-03-01 15:30:25]framework.configuration.initialize.before: ini
+[2014-03-01 15:30:25]framework.configuration.initialize.after: ini
+[2014-03-01 15:30:25]framework.database.initialize.before: 
+[2014-03-01 15:30:25]framework.database.initialize.after: mysql
+[2014-03-01 15:30:25]framework.cache.initialize.before: 
+[2014-03-01 15:30:25]framework.cache.initialize.after: filecache
+[2014-03-01 15:30:25]framework.session.initialize.before: 
+[2014-03-01 15:30:25]framework.session.initialize.after: server
+[2014-03-01 15:30:25]framework.security.initialize.before: 
+Average: 0.0030835, Longest: 0.007, Shortest: 0.001, Total: 0.064004
+[2014-03-01 15:32:36]framework.module.initialize.before: App
+[2014-03-01 15:32:36]framework.module.initialize.before: Admin
+[2014-03-01 15:32:36]framework.module.initialize.before: Cron
+[2014-03-01 15:32:36]framework.configuration.initialize.before: ini
+[2014-03-01 15:32:36]framework.configuration.initialize.after: ini
+[2014-03-01 15:32:36]framework.database.initialize.before: 
+[2014-03-01 15:32:36]framework.database.initialize.after: mysql
+[2014-03-01 15:32:36]framework.cache.initialize.before: 
+[2014-03-01 15:32:36]framework.cache.initialize.after: filecache
+[2014-03-01 15:32:36]framework.session.initialize.before: 
+[2014-03-01 15:32:36]framework.session.initialize.after: server
+[2014-03-01 15:32:36]framework.security.initialize.before: 
+[2014-03-01 15:32:36]framework.security.initialize.user:  /   / test11@test.cz
+[2014-03-01 15:32:36]framework.security.initialize.after: 
+[2014-03-01 15:32:36]framework.router.findroute.before: /login
+[2014-03-01 15:32:36]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:32:37]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:32:37]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:32:37]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:32:37]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:32:37]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:32:37]framework.controller.construct.after: App_Controller_User
+Average: -0.0412725, Longest: 0.027002, Shortest: -0.994, Total: -0.903995
+[2014-03-01 15:32:37]framework.module.initialize.before: App
+[2014-03-01 15:32:37]framework.module.initialize.before: Admin
+[2014-03-01 15:32:37]framework.module.initialize.before: Cron
+[2014-03-01 15:32:37]framework.configuration.initialize.before: ini
+[2014-03-01 15:32:37]framework.configuration.initialize.after: ini
+[2014-03-01 15:32:37]framework.database.initialize.before: 
+[2014-03-01 15:32:37]framework.database.initialize.after: mysql
+[2014-03-01 15:32:37]framework.cache.initialize.before: 
+[2014-03-01 15:32:37]framework.cache.initialize.after: filecache
+[2014-03-01 15:32:37]framework.session.initialize.before: 
+[2014-03-01 15:32:37]framework.session.initialize.after: server
+[2014-03-01 15:32:37]framework.security.initialize.before: 
+[2014-03-01 15:32:37]framework.security.initialize.user:  /   / test11@test.cz
+[2014-03-01 15:32:37]framework.security.initialize.after: 
+[2014-03-01 15:32:37]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:32:37]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.00462525, Longest: 0.027001, Shortest: 0.001, Total: 0.079005
+[2014-03-01 15:32:42]framework.module.initialize.before: App
+[2014-03-01 15:32:42]framework.module.initialize.before: Admin
+[2014-03-01 15:32:42]framework.module.initialize.before: Cron
+[2014-03-01 15:32:42]framework.configuration.initialize.before: ini
+[2014-03-01 15:32:42]framework.configuration.initialize.after: ini
+[2014-03-01 15:32:42]framework.database.initialize.before: 
+[2014-03-01 15:32:42]framework.database.initialize.after: mysql
+[2014-03-01 15:32:42]framework.cache.initialize.before: 
+[2014-03-01 15:32:42]framework.cache.initialize.after: filecache
+[2014-03-01 15:32:42]framework.session.initialize.before: 
+[2014-03-01 15:32:42]framework.session.initialize.after: server
+[2014-03-01 15:32:42]framework.security.initialize.before: 
+[2014-03-01 15:32:42]framework.security.initialize.user:  /   / test11@test.cz
+[2014-03-01 15:32:42]framework.security.initialize.after: 
+[2014-03-01 15:32:42]framework.router.findroute.before: /login
+[2014-03-01 15:32:42]framework.router.findroute.after: /login, app, user, login
+[2014-03-01 15:32:42]framework.controller.construct.before: App_Controller_User
+[2014-03-01 15:32:42]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:32:42]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:32:42]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:32:42]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/user/login.phtml
+[2014-03-01 15:32:42]framework.controller.construct.after: App_Controller_User
+[2014-03-01 15:32:42]framework.security.authenticate.success: 2 / Jan Nový / test11@test.cz
+Average: 0.0068699565217391, Longest: 0.068004, Shortest: 0, Total: 0.158009
+[2014-03-01 15:32:42]framework.module.initialize.before: App
+[2014-03-01 15:32:42]framework.module.initialize.before: Admin
+[2014-03-01 15:32:42]framework.module.initialize.before: Cron
+[2014-03-01 15:32:42]framework.configuration.initialize.before: ini
+[2014-03-01 15:32:42]framework.configuration.initialize.after: ini
+[2014-03-01 15:32:42]framework.database.initialize.before: 
+[2014-03-01 15:32:42]framework.database.initialize.after: mysql
+[2014-03-01 15:32:42]framework.cache.initialize.before: 
+[2014-03-01 15:32:42]framework.cache.initialize.after: filecache
+[2014-03-01 15:32:42]framework.session.initialize.before: 
+[2014-03-01 15:32:42]framework.session.initialize.after: server
+[2014-03-01 15:32:42]framework.security.initialize.before: 
+[2014-03-01 15:32:42]framework.security.initialize.user: 2 / Jan Nový / test11@test.cz
+[2014-03-01 15:32:42]framework.security.initialize.after: 
+[2014-03-01 15:32:42]framework.router.findroute.before: /
+[2014-03-01 15:32:42]framework.router.findroute.after: /, app, index, index
+[2014-03-01 15:32:42]framework.controller.construct.before: App_Controller_Index
+[2014-03-01 15:32:42]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:32:42]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/layouts/basic.phtml
+[2014-03-01 15:32:42]framework.view.construct.before: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:32:42]framework.view.construct.after: E:\xampp\htdocs\slamic/modules/app/views/index/index.phtml
+[2014-03-01 15:32:42]framework.controller.construct.after: App_Controller_Index
+Average: 0.0040911363636364, Longest: 0.027002, Shortest: 0, Total: 0.097006
+[2014-03-01 15:32:42]framework.module.initialize.before: App
+[2014-03-01 15:32:42]framework.module.initialize.before: Admin
+[2014-03-01 15:32:42]framework.module.initialize.before: Cron
+[2014-03-01 15:32:42]framework.configuration.initialize.before: ini
+[2014-03-01 15:32:42]framework.configuration.initialize.after: ini
+[2014-03-01 15:32:42]framework.database.initialize.before: 
+[2014-03-01 15:32:42]framework.database.initialize.after: mysql
+[2014-03-01 15:32:42]framework.cache.initialize.before: 
+[2014-03-01 15:32:42]framework.cache.initialize.after: filecache
+[2014-03-01 15:32:42]framework.session.initialize.before: 
+[2014-03-01 15:32:42]framework.session.initialize.after: server
+[2014-03-01 15:32:42]framework.security.initialize.before: 
+[2014-03-01 15:32:42]framework.security.initialize.user: 2 / Jan Nový / test11@test.cz
+[2014-03-01 15:32:42]framework.security.initialize.after: 
+[2014-03-01 15:32:42]framework.router.findroute.before: /favicon.ico
+[2014-03-01 15:32:42]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.00462525, Longest: 0.027001, Shortest: 0, Total: 0.079004

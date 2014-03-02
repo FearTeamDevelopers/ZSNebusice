@@ -1,0 +1,179 @@
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 80 ~ file_put_contents(E:\xampp\htdocs\pedak/logs/2014-02-15.txt): failed to open stream: No such file or directory
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:50:34] ~ Warning ~ logger.php ~ 80 ~ file_put_contents(E:\xampp\htdocs\pedak/logs/2014-02-15.txt): failed to open stream: No such file or directory
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 80 ~ file_put_contents(E:\xampp\htdocs\pedak/logs/2014-02-15.txt): failed to open stream: No such file or directory
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:52:10] ~ Warning ~ logger.php ~ 80 ~ file_put_contents(E:\xampp\htdocs\pedak/logs/2014-02-15.txt): failed to open stream: No such file or directory
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 80 ~ file_put_contents(E:\xampp\htdocs\pedak/logs/2014-02-15.txt): failed to open stream: No such file or directory
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:52:15] ~ Warning ~ logger.php ~ 80 ~ file_put_contents(E:\xampp\htdocs\pedak/logs/2014-02-15.txt): failed to open stream: No such file or directory
+[2014-02-15 10:53:38] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:53:38] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:53:38] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:53:38] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:53:38] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:53:38] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:54:11] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:54:11] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:54:11] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:54:11] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:54:11] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:54:11] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:57:41] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:57:41] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:57:41] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:57:41] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:57:41] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:57:41] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:58:53] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:58:53] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:58:53] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:58:53] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:58:53] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:58:53] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:58:55] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:58:55] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:58:55] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 10:58:55] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 10:58:55] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 10:58:55] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:05:34] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:05:34] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:05:34] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:05:34] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:05:34] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:05:34] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:05:34] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:05:34] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:05:36] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:05:36] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:05:36] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:05:36] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:05:37] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:05:37] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:05:37] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:05:37] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:06:17] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:06:17] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:06:17] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:06:17] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:06:17] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:06:17] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:06:17] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:06:17] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:07:06] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:07:06] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:07:06] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:07:06] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:07:06] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:07:06] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:07:06] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:07:06] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:07:08] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:07:08] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:07:08] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:07:08] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:07:08] ~ Notice ~ core.php ~ 65 ~ Undefined offset: 2
+[2014-02-15 11:07:08] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:07:08] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:07:08] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:09:47] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:09:47] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:09:47] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:09:47] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:09:47] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:09:47] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:11:19] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:11:19] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:11:19] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:11:19] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:11:19] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:11:19] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:12:38] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:12:38] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:12:38] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:12:38] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:12:38] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:12:38] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:12:47] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:12:47] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:12:47] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:12:47] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:12:47] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:12:47] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:12:58] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:12:58] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:12:58] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:12:58] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:12:58] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:12:58] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:14:18] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:14:18] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:14:18] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:14:19] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:14:19] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:14:19] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:14:20] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:14:20] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:14:20] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:14:20] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:14:20] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:14:20] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:14:41] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:14:41] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:14:41] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:14:41] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:14:41] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:14:41] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:17:34] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:17:34] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:17:34] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:17:34] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:17:34] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:17:34] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:18:26] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:18:26] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:18:26] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:18:26] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:18:26] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:18:26] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:18:47] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:18:47] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:18:47] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:18:47] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:18:47] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:18:47] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:19:27] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:19:27] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:19:27] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:19:27] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:19:27] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:19:27] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:19:40] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:19:40] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:19:40] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:19:40] ~ Warning ~ logger.php ~ 31 ~ Division by zero
+[2014-02-15 11:19:40] ~ Warning ~ logger.php ~ 75 ~ max(): Array must contain at least one element
+[2014-02-15 11:19:40] ~ Warning ~ logger.php ~ 76 ~ min(): Array must contain at least one element
+[2014-02-15 11:25:14] ~ Warning ~ mysql.php ~ 105 ~ mysqli::mysqli(): (HY000/1049): Unknown database 'pedak'
+[2014-02-15 11:27:08] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\pedak\modules\app\views\errors\500.phtml:21)
+[2014-02-15 11:30:48] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\pedak\modules\app\views\errors\500.phtml:21)
+[2014-02-15 11:35:47] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\pedak\modules\app\views\errors\500.phtml:21)
+[2014-02-15 11:36:10] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\pedak\modules\app\views\errors\500.phtml:21)
+[2014-02-15 11:37:37] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\pedak\modules\app\views\errors\500.phtml:21)
+[2014-02-15 11:38:13] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\pedak\modules\app\views\errors\500.phtml:21)

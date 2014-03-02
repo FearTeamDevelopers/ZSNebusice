@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="cs" />
+        <meta name="viewport" content="width=device-width, maximum-scale=2.0, minimum-scale=1.0, initial-scale=1.0" />
+
+        <link href="/public/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/grid.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/smoothness/jquery-ui-1.10.3.custom.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/slides.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <!--[if lt IE 9]><script type="text/javascript" src="/public/js/html5.js"></script><![endif]-->
+        <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/public/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="/public/js/jquery.slides.min.js"></script>
+
+        <title>Konzultace</title>
+    </head>
+    <body lang="cs">
+        <div id="headerWrapper">
+            <header class="content">
+                <h1><a href="/" id="logo">Konzultace</a></h1>
+<!--
+               {include menu.phtml}
+-->
+            </header>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="contentWrapper">
+            <div class="content">
+                {if !empty($flashMessage)}
+                <section class="container_12">
+                    <div class="ad-notif-info grid_12"><p>{echo $flashMessage}</p></div>
+                </section>
+                {/if}
+
+                <section class="container_12">
+                    {yield action}
+                </section>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="footerWrapper">
+            <footer class="content">
+                <section class="container_12">
+                    <div class="grid_4">
+                        <span>
+                            Zš Nebušice - Konzultace | Made by Tomáš Sláma, Tomáš Církovský, Lucie Jandáková<br/>
+                        </span>
+                    </div>
+               
+                </section>
+            </footer>
+        </div>
+
+        <div id="dialog"></div>
+
+        <script type="text/javascript" src="/public/js/global.js"></script>
+
+    </body>
+</html>

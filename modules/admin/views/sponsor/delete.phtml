@@ -1,0 +1,30 @@
+<article class="grid_12">
+    <h1>Delete sponsor</h1>
+
+    <form method="post" action="#" class="stdform">
+        <p>
+            <label>Title</label>
+            <span class="field">
+                <input type="text" name="title" class="mediuminput" disabled value="{echo $sponsor->title}"/>
+            </span>
+        </p>
+        <p>
+            <label>URL</label>
+            <span class="field">
+                <input type="url" name="url" class="mediuminput" disabled value="{echo $sponsor->url}"/>
+            </span>
+        </p>
+        <p>
+            <label>Logo</label>
+            <span class="field">
+                <img src="{echo $sponsor->logo}" alt="" />
+            </span>
+        </p>
+        <p>
+            <span class="field">
+                <input type="submit" name="deleteSponsor" value="Delete sponsor" />
+                <input type="submit" name="cancel" value="Cancel" />
+            </span>
+        </p>
+    </form>
+</article>

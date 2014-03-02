@@ -1,0 +1,31 @@
+
+
+
+<article class="grid_12 indexNextMatch">
+    <h1>Seznam učitelů</h1>
+    <h3>Vyberte učitele, se kterými máte zájem o konzultaci</h3>
+    <div class="grid_6">
+      
+        <table>
+            <tr>
+                <td>Jméno učitele</td>
+            </tr>
+            {foreach $ucitel in $ucitele}
+            <tr>
+                <td>
+                    <input type="checkbox" name="checkbox[]" value="{echo $ucitel->id}"/>
+                    <label for="checkbox[]" >{echo $ucitel->firstname.' '.$ucitel->lastname}</label>                  
+                </td>
+            </tr>
+            {/foreach}
+        </table>
+        <input class="continueButton" type="button" value="Pokračovat" onclick=""/>
+    </div>
+   
+   
+</article>
+
+
+
+
+<div class="clear"></div>

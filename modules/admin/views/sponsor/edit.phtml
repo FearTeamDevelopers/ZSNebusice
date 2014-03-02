@@ -1,0 +1,67 @@
+<article class="grid_12">
+    <h1>Edit sponsor</h1>
+    <form method="post" action="#" class="stdform" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="5000000"/>
+        <p>
+            <label>Title*</label>
+            <span class="field">
+                <input type="text" name="title" class="longinput" required value="{echo $sponsor->title}"/>
+            </span>
+            {if isset($errors["title"])}
+            <span class="error">
+                {echo join("<br/>", $errors["title"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>URL*</label>
+            <span class="field">
+                <input type="url" name="url" class="longinput" required value="{echo $sponsor->url}" />
+            </span>
+            {if isset($errors["url"])}
+            <span class="error">
+                {echo join("<br/>", $errors["url"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Active</label>
+            <span class="field">
+                <select name="active" class="longinput">
+                    {if $sponsor->active}
+                    <option value="0">Inactive</option>
+                    <option value="1" selected>Active</option>
+                    {/if}
+                    {else}
+                    <option value="0" selected>Inactive</option>
+                    <option value="1">Active</option>
+                    {/else}
+                </select>
+            </span>
+            {if isset($errors["active"])}
+            <span class="error">
+                {echo join("<br/>", $errors["active"])}
+            </span>
+            {/if}
+        </p>
+
+        <p>
+            <label>Logo*</label>
+            <span class="field">
+                <img src="{echo $sponsor->logo}" alt="" />
+                <input type="file" name="logo" class="longinput">
+            </span>
+            {if isset($errors["logo"])}
+            <span class="error">
+                {echo join("<br/>", $errors["logo"])}
+            </span>
+            {/if}
+        </p>
+        
+        <p>
+            <span class="field">
+                <input type="submit" name="editSponsor" value="Save changes" />
+            </span>
+        </p>
+    </form>
+</article>

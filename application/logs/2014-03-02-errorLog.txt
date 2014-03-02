@@ -1,0 +1,26 @@
+[2014-03-02 10:49:11] ~ Warning ~ core.php ~ 248 ~ filesize(): stat failed for H:\xampp\htdocs/application/logs/2014-03-02-errorLog.txt
+[2014-03-02 10:49:11] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:49:11] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:49:25] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:49:25] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:50:31] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:51:31] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:51:31] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:53:57] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:53:57] ~ Uncaught exception: Exception ~ H:\xampp\htdocs\vendors\thcframe\core\core.php ~ 77 ~ Admin_Module not found
+[2014-03-02 10:56:20] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at H:\xampp\htdocs\vendors\thcframe\core\core.php:405)
+[2014-03-02 11:20:41] ~ Notice ~ template.php(302) : runtime-created function ~ 12 ~ Undefined variable: ucitele
+[2014-03-02 11:20:41] ~ Warning ~ template.php(302) : runtime-created function ~ 12 ~ Invalid argument supplied for foreach()
+[2014-03-02 11:20:41] ~ Notice ~ template.php(302) : runtime-created function ~ 27 ~ Undefined variable: nextMatchB
+[2014-03-02 11:20:41] ~ Warning ~ template.php(302) : runtime-created function ~ 27 ~ Invalid argument supplied for foreach()
+[2014-03-02 11:20:58] ~ Notice ~ template.php(302) : runtime-created function ~ 12 ~ Undefined variable: ucitele
+[2014-03-02 11:20:58] ~ Warning ~ template.php(302) : runtime-created function ~ 12 ~ Invalid argument supplied for foreach()
+[2014-03-02 11:20:58] ~ Notice ~ template.php(302) : runtime-created function ~ 27 ~ Undefined variable: nextMatchB
+[2014-03-02 11:20:58] ~ Warning ~ template.php(302) : runtime-created function ~ 27 ~ Invalid argument supplied for foreach()
+[2014-03-02 11:20:58] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at H:\xampp\htdocs\vendors\thcframe\core\core.php:405)
+[2014-03-02 11:24:21] ~ Notice ~ template.php(302) : runtime-created function ~ 27 ~ Undefined variable: nextMatchB
+[2014-03-02 11:24:21] ~ Warning ~ template.php(302) : runtime-created function ~ 27 ~ Invalid argument supplied for foreach()
+[2014-03-02 11:27:11] ~ Notice ~ template.php(302) : runtime-created function ~ 28 ~ Undefined variable: nextMatchB
+[2014-03-02 11:27:11] ~ Warning ~ template.php(302) : runtime-created function ~ 28 ~ Invalid argument supplied for foreach()
+[2014-03-02 12:15:09] ~ Notice ~ template.php(302) : runtime-created function ~ 13 ~ Undefined variable: ucitele
+[2014-03-02 12:15:09] ~ Warning ~ template.php(302) : runtime-created function ~ 13 ~ Invalid argument supplied for foreach()

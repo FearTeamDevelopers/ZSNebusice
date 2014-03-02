@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="cs" />
+        <meta name="viewport" content="width=device-width, maximum-scale=2.0, minimum-scale=1.0, initial-scale=1.0" />
+
+        <link href="/public/css/reset.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/grid.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/smoothness/jquery-ui-1.10.3.custom.min.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/adminStyle.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/public/css/tables.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <!--[if lt IE 9]><script type="text/javascript" src="/public/js/html5.js"></script><![endif]-->
+        <script type="text/javascript" src="/public/js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/public/js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script type="text/javascript" src="/public/js/jquery.dataTables.min.js"></script>
+
+        <title>Admin Pedak</title>
+    </head>
+    <body lang="cs">
+        <div id="headerWrapper">
+            <header class="content">
+                <h1><a href="/admin/" id="logo">Pedak Admin BETA</a></h1>
+
+                {include menu.phtml}
+            </header>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="contentWrapper">
+            <div class="content">
+                {if !empty($flashMessage)}
+                <section class="container_12">
+                    <div class="ad-notif-info grid_12"><p>{echo $flashMessage}</p></div>
+                </section>
+                {/if}
+                
+                {if !empty($longFlashMessage)}
+                <section class="container_12">
+                    <div class="grid_12"><p>{echo $longFlashMessage}</p></div>
+                </section>
+                {/if}
+
+                <section class="container_12">
+                    {yield action}
+                </section>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="footerWrapper">
+            <footer class="content">
+                <section class="container_12">
+                    <div class="grid_4">
+                        <span>
+                            Florbal Peďák | Made by Tomáš Hodáň<br/>
+                        </span>
+                    </div>
+                    <div class="grid_4">
+                        <ul>
+                            <li><a href="http://http://www.floorball.org/default.asp" target=_blank>IFF</a></li>
+                            <li><a href="http://cfbu.cz" target=_blank>CFBU</a></li>
+                            <li><a href="http://florbal.cz/" target=_blank>Florbal.cz</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_4">
+                        <ul id="icons">
+                            <li><a href="#"><img src="/public/images/social/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/public/images/social/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/public/images/social/linkedin.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </section>
+            </footer>
+        </div>
+
+        <div id="dialog"></div>
+
+        <script type="text/javascript" src="/public/js/adminglobal.js"></script>
+
+    </body>
+</html>

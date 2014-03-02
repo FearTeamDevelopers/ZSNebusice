@@ -1,0 +1,178 @@
+<article class="grid_12">
+    <h1>Registrace</h1>
+    <form method="post" action="#" class="stdform" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="5000000"/>
+        <p>
+            <label>Jméno*</label>
+            <span class="field">
+                <input type="text" name="firstname" class="longinput" required value="" maxlength="40" />
+            </span>
+            {if isset($errors["firstname"])}
+            <span class="error">
+                {echo join("<br/>", $errors["firstname"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Příjmení*</label>
+            <span class="field">
+                <input type="text" name="lastname" class="longinput" required value="" maxlength="40" />
+            </span>
+            {if isset($errors["lastname"])}
+            <span class="error">
+                {echo join("<br/>", $errors["lastname"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Email*</label>
+            <span class="field">
+                <input type="email" name="email" class="longinput" required value="" maxlength="60" />
+            </span>
+            {if isset($errors["email"])}
+            <span class="error">
+                {echo join("<br/>", $errors["email"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Heslo*</label>
+            <span class="field">
+                <input type="password" name="password" class="longinput" required value="" />
+            </span>
+            {if isset($errors["password"])}
+            <span class="error">
+                {echo join("<br/>", $errors["password"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Heslo znovu*</label>
+            <span class="field">
+                <input type="password" name="password2" class="longinput" required value="" maxlength="30"/>
+            </span>
+            {if isset($errors["password2"])}
+            <span class="error">
+                {echo join("<br/>", $errors["password2"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Datum narození*</label>
+            <span class="field">
+                <input type="text" name="dob" class="longinput datepicker-registration" value="" maxlength="30"/>
+            </span>
+            {if isset($errors["dob"])}
+            <span class="error">
+                {echo join("<br/>", $errors["dob"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>ČFBU PersonalID*</label>
+            <span class="field">
+                <input type="text" name="cfbuPersonalNum" class="longinput" required value="" maxlength="11"/>
+            </span>
+            {if isset($errors["cfbuPersonalNum"])}
+            <span class="error">
+                {echo join("<br/>", $errors["cfbuPersonalNum"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Foto</label>
+            <span class="field">
+                <input type="file" name="photo" class="longinput" />
+            </span>
+            {if isset($errors["photo"])}
+            <span class="error">
+                {echo join("<br/>", $errors["photo"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Číslo dresu*</label>
+            <span class="field">
+                <input type="number" min="0" max="99" name="playerNum" class="longinput" required value="" maxlength="2"/>
+            </span>
+            {if isset($errors["playerNum"])}
+            <span class="error">
+                {echo join("<br/>", $errors["playerNum"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Team*</label>
+            <span class="field">
+                <select name="team" class="longinput">
+                    <option value="">Vyber</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                </select>
+            </span>
+            {if isset($errors["team"])}
+            <span class="error">
+                {echo join("<br/>", $errors["team"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Nick</label>
+            <span class="field">
+                <input type="text" name="nickname" class="longinput" value="" maxlength="30" />
+            </span>
+            {if isset($errors["nickname"])}
+            <span class="error">
+                {echo join("<br/>", $errors["nickname"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Pozice*</label>
+            <span class="field">
+                <select name="position" class="longinput">
+                    <option value="">Vyber</option>
+                    <option value="u">Útočník</option>
+                    <option value="o">Obránce</option>
+                    <option value="b">Brankář</option>
+                </select>
+            </span>
+            {if isset($errors["position"])}
+            <span class="error">
+                {echo join("<br/>", $errors["position"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Držení hole*</label>
+            <span class="field">
+                <select name="grip" class="longinput">
+                    <option value="">Vyber</option>
+                    <option value="r">Pravá</option>
+                    <option value="l">Levá</option>
+                </select>
+            </span>
+            {if isset($errors["grip"])}
+            <span class="error">
+                {echo join("<br/>", $errors["grip"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Další</label>
+            <span class="field">
+                <textarea cols="15" rows="5" name="other" class="longinput" maxlength="1024"></textarea>
+            </span>
+            {if isset($errors["other"])}
+            <span class="error">
+                {echo join("<br/>", $errors["other"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <span class="field">
+                <input type="submit" name="register" value="Vytovřit účet" />
+            </span>
+        </p>
+    </form>
+</article>

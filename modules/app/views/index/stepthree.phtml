@@ -1,0 +1,19 @@
+{foreach $ucitel in $ucitele}
+<label>
+    {script $iduc = $ucitel->id_ucitel}
+    {echo $ucitel->jmeno." ".$ucitel->prijmeni}
+</label>
+<select name="selectbox_{echo $ucitel->id_ucitel}">
+    {foreach $cas in $casy}
+    <option value="{echo $ucitel->id_ucitel .'-'.$cas->id_cas">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
+    {/foreach}
+</select>
+<span class="error">
+    {if isset($errors["selectbox_".$iduc])}
+            <span class="error">
+                {echo join("<br/>", $errors["selectbox_".$iduc])}
+            </span>
+            {/if}
+</span>
+<br/>
+{/foreach}

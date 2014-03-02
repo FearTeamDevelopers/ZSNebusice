@@ -1,0 +1,180 @@
+[2014-03-01 14:03:47] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\views\errors\500.phtml:21)
+[2014-03-01 14:04:19] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\views\errors\500.phtml:21)
+[2014-03-01 14:06:22] ~ Warning ~ query.php ~ 130 ~ Invalid argument supplied for foreach()
+[2014-03-01 14:06:22] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:06:22] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:06:22] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\views\errors\500.phtml:21)
+[2014-03-01 14:09:17] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\views\errors\500.phtml:21)
+[2014-03-01 14:09:30] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\views\errors\500.phtml:21)
+[2014-03-01 14:09:47] ~ Warning ~ query.php ~ 130 ~ Invalid argument supplied for foreach()
+[2014-03-01 14:09:47] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:09:47] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:10:21] ~ Warning ~ query.php ~ 130 ~ Invalid argument supplied for foreach()
+[2014-03-01 14:10:21] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:10:21] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:10:23] ~ Warning ~ query.php ~ 130 ~ Invalid argument supplied for foreach()
+[2014-03-01 14:10:23] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:10:23] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:11:10] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:11:10] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:12:57] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:12:57] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:12:57] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:12:57] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:12:57] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:12:57] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:12:57] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\controller\index.php:148)
+[2014-03-01 14:14:03] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:14:03] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:14:03] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:14:03] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:14:03] ~ Notice ~ query.php ~ 189 ~ Undefined variable: groupBy
+[2014-03-01 14:14:03] ~ Notice ~ query.php ~ 189 ~ Undefined variable: having
+[2014-03-01 14:14:03] ~ Warning ~ controller.php ~ 225 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\modules\app\controller\index.php:148)
+[2014-03-01 15:08:43] ~ Notice ~ core.php ~ 92 ~ Use of undefined constant APP_DIR - assumed 'APP_DIR'
+[2014-03-01 15:08:43] ~ Warning ~ core.php ~ 92 ~ file_put_contents(APP_DIR/application/logs/system.log): failed to open stream: No such file or directory
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:27:36] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Property access is not allowed yet
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:30:25] ~ Warning ~ 500.phtml ~ 21 ~ print_r(): Couldn't fetch mysqli
+[2014-03-01 15:32:42] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at E:\xampp\htdocs\slamic\vendors\thcframe\core\core.php:405)

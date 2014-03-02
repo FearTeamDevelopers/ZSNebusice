@@ -1,0 +1,102 @@
+<article class="grid_12">
+    <h1>Add match</h1>
+
+    <form method="post" action="#" class="stdform">
+        <p>
+            <label>Home*</label>
+            <span class="field">
+                <input type="text" name="home" class="longinput" required value="" />
+            </span>
+            {if isset($errors["home"])}
+            <span class="error">
+                {echo join("<br/>", $errors["home"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Host*</label>
+            <span class="field">
+                <input type="text" name="host" class="longinput" required value="" />
+            </span>
+            {if isset($errors["host"])}
+            <span class="error">
+                {echo join("<br/>", $errors["host"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Hall*</label>
+            <span class="field">
+                <input type="text" name="hall" class="longinput" required value="" />
+            </span>
+            {if isset($errors["hall"])}
+            <span class="error">
+                {echo join("<br/>", $errors["hall"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Date*</label>
+            <span class="field">
+                <input type="text" name="date" class="longinput datepicker" required value="" />
+            </span>
+            {if isset($errors["date"])}
+            <span class="error">
+                {echo join("<br/>", $errors["date"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Score home</label>
+            <span class="field">
+                <input type="text" name="scorehome" class="longinput" value="-1" />
+            </span>
+            {if isset($errors["scorehome"])}
+            <span class="error">
+                {echo join("<br/>", $errors["scorehome"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Score host</label>
+            <span class="field">
+                <input type="text" name="scorehost" class="longinput" value="-1" />
+            </span>
+            {if isset($errors["scorehost"])}
+            <span class="error">
+                {echo join("<br/>", $errors["scorehost"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Season</label>
+            <span class="field">
+                <input type="text" name="season" class="longinput" value="" />
+            </span>
+            {if isset($errors["season"])}
+            <span class="error">
+                {echo join("<br/>", $errors["season"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>Team</label>
+            <span class="field">
+                <select name="team" class="longinput">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                </select>
+            </span>
+            {if isset($errors["team"])}
+            <span class="error">
+                {echo join("<br/>", $errors["team"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <span class="field">
+                <input type="submit" name="addMatch" value="Add match" />
+            </span>
+        </p>
+    </form>
+</article>

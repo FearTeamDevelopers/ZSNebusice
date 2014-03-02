@@ -1,0 +1,31 @@
+<article class="grid_12">
+    <h1 class="left">Sponsor list</h1>
+    <a class="button-orange right" href="/admin/sponsor/add/">+ Add sponsor</a>
+    <div class="clear"></div><br/><br/>
+
+    {if !empty($sponsors)}
+    <table class="dt-base">
+        <thead>
+        <th>Title</th><th>URL</th>
+        <th>Logo</th><th>Active</th>
+        <th>Created</th><th>Manage</th>
+        </thead>
+        <tbody>
+            {foreach $sponsor in $sponsors}
+            <tr>
+                <td>{echo $sponsor->title}</td>
+                <td>{echo $sponsor->url}</td>
+                <td><img src="{echo $sponsor->logo}" alt="" width="150" /></td>
+                <td>{echo $sponsor->active}</td>
+                <td>{echo $sponsor->created}</td>
+                <td>
+                    <a class="button-edit" href="/admin/sponsor/edit/{echo $sponsor->id}" >Edit</a>
+                    <a class="button-delete" href="/admin/sponsor/delete/{echo $sponsor->id}" >Delete</a>
+                </td>
+            </tr>
+            {/foreach}
+        </tbody>
+    </table>
+
+    {/if}
+</article>

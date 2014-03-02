@@ -1,0 +1,76 @@
+[2014-02-20 20:08:29]framework.module.initialize.before: App
+[2014-02-20 20:08:29]framework.module.initialize.before: Admin
+[2014-02-20 20:08:29]framework.module.initialize.before: Cron
+[2014-02-20 20:08:29]framework.configuration.initialize.before: ini
+[2014-02-20 20:08:29]framework.configuration.initialize.after: ini
+[2014-02-20 20:08:29]framework.database.initialize.before: 
+[2014-02-20 20:08:29]framework.database.initialize.after: mysql
+[2014-02-20 20:08:29]framework.cache.initialize.before: 
+[2014-02-20 20:08:29]framework.cache.initialize.after: filecache
+[2014-02-20 20:08:29]framework.session.initialize.before: 
+[2014-02-20 20:08:29]framework.session.initialize.after: server
+[2014-02-20 20:08:29]framework.security.initialize.before: 
+[2014-02-20 20:08:29]framework.security.initialize.after: 
+[2014-02-20 20:08:29]framework.router.findroute.before: /
+[2014-02-20 20:08:29]framework.router.findroute.after: /, app, index, index
+[2014-02-20 20:08:29]framework.controller.construct.before: App_Controller_Index
+[2014-02-20 20:08:29]framework.view.construct.before: E:\xampp\htdocs\pedak/modules/app/views/layouts/basic.phtml
+[2014-02-20 20:08:29]framework.view.construct.after: E:\xampp\htdocs\pedak/modules/app/views/layouts/basic.phtml
+[2014-02-20 20:08:29]framework.view.construct.before: E:\xampp\htdocs\pedak/modules/app/views/index/index.phtml
+[2014-02-20 20:08:29]framework.view.construct.after: E:\xampp\htdocs\pedak/modules/app/views/index/index.phtml
+[2014-02-20 20:08:29]framework.controller.construct.after: App_Controller_Index
+Average: 0.01009580952381, Longest: 0.052003, Shortest: 0, Total: -0.403966
+[2014-02-20 20:08:30]framework.module.initialize.before: App
+[2014-02-20 20:08:30]framework.module.initialize.before: Admin
+[2014-02-20 20:08:30]framework.module.initialize.before: Cron
+[2014-02-20 20:08:30]framework.configuration.initialize.before: ini
+[2014-02-20 20:08:30]framework.configuration.initialize.after: ini
+[2014-02-20 20:08:30]framework.database.initialize.before: 
+[2014-02-20 20:08:30]framework.database.initialize.after: mysql
+[2014-02-20 20:08:30]framework.cache.initialize.before: 
+[2014-02-20 20:08:30]framework.cache.initialize.after: filecache
+[2014-02-20 20:08:30]framework.session.initialize.before: 
+[2014-02-20 20:08:30]framework.session.initialize.after: server
+[2014-02-20 20:08:30]framework.security.initialize.before: 
+[2014-02-20 20:08:30]framework.security.initialize.after: 
+[2014-02-20 20:08:30]framework.router.findroute.before: /favicon.ico
+[2014-02-20 20:08:30]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0051336, Longest: 0.036002, Shortest: 0.001, Total: 0.100006
+[2014-02-20 20:08:33]framework.module.initialize.before: App
+[2014-02-20 20:08:33]framework.module.initialize.before: Admin
+[2014-02-20 20:08:33]framework.module.initialize.before: Cron
+[2014-02-20 20:08:33]framework.configuration.initialize.before: ini
+[2014-02-20 20:08:33]framework.configuration.initialize.after: ini
+[2014-02-20 20:08:33]framework.database.initialize.before: 
+[2014-02-20 20:08:33]framework.database.initialize.after: mysql
+[2014-02-20 20:08:33]framework.cache.initialize.before: 
+[2014-02-20 20:08:33]framework.cache.initialize.after: filecache
+[2014-02-20 20:08:33]framework.session.initialize.before: 
+[2014-02-20 20:08:33]framework.session.initialize.after: server
+[2014-02-20 20:08:33]framework.security.initialize.before: 
+[2014-02-20 20:08:33]framework.security.initialize.after: 
+[2014-02-20 20:08:33]framework.router.findroute.before: /team
+[2014-02-20 20:08:33]framework.router.findroute.after: /team, app, team, index
+[2014-02-20 20:08:33]framework.controller.construct.before: App_Controller_Team
+[2014-02-20 20:08:33]framework.view.construct.before: E:\xampp\htdocs\pedak/modules/app/views/layouts/basic.phtml
+[2014-02-20 20:08:33]framework.view.construct.after: E:\xampp\htdocs\pedak/modules/app/views/layouts/basic.phtml
+[2014-02-20 20:08:33]framework.view.construct.before: E:\xampp\htdocs\pedak/modules/app/views/team/index.phtml
+[2014-02-20 20:08:33]framework.view.construct.after: E:\xampp\htdocs\pedak/modules/app/views/team/index.phtml
+[2014-02-20 20:08:33]framework.controller.construct.after: App_Controller_Team
+Average: 0.0044764761904762, Longest: 0.036002, Shortest: 0, Total: 0.274016
+[2014-02-20 20:08:33]framework.module.initialize.before: App
+[2014-02-20 20:08:33]framework.module.initialize.before: Admin
+[2014-02-20 20:08:33]framework.module.initialize.before: Cron
+[2014-02-20 20:08:33]framework.configuration.initialize.before: ini
+[2014-02-20 20:08:33]framework.configuration.initialize.after: ini
+[2014-02-20 20:08:33]framework.database.initialize.before: 
+[2014-02-20 20:08:33]framework.database.initialize.after: mysql
+[2014-02-20 20:08:33]framework.cache.initialize.before: 
+[2014-02-20 20:08:33]framework.cache.initialize.after: filecache
+[2014-02-20 20:08:33]framework.session.initialize.before: 
+[2014-02-20 20:08:33]framework.session.initialize.after: server
+[2014-02-20 20:08:33]framework.security.initialize.before: 
+[2014-02-20 20:08:33]framework.security.initialize.after: 
+[2014-02-20 20:08:33]framework.router.findroute.before: /favicon.ico
+[2014-02-20 20:08:33]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.004867, Longest: 0.037002, Shortest: 0.001, Total: 0.077005

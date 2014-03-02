@@ -1,0 +1,70 @@
+[2014-02-22 14:05:38]framework.module.initialize.before: App
+[2014-02-22 14:05:38]framework.module.initialize.before: Admin
+[2014-02-22 14:05:38]framework.module.initialize.before: Cron
+[2014-02-22 14:05:38]framework.configuration.initialize.before: ini
+[2014-02-22 14:05:38]framework.configuration.initialize.after: ini
+[2014-02-22 14:05:38]framework.database.initialize.before: 
+[2014-02-22 14:05:38]framework.database.initialize.after: mysql
+[2014-02-22 14:05:38]framework.cache.initialize.before: 
+[2014-02-22 14:05:38]framework.cache.initialize.after: filecache
+[2014-02-22 14:05:38]framework.session.initialize.before: 
+[2014-02-22 14:05:38]framework.session.initialize.after: server
+[2014-02-22 14:05:38]framework.security.initialize.before: 
+[2014-02-22 14:05:38]framework.security.initialize.after: 
+[2014-02-22 14:05:38]framework.router.findroute.before: /
+[2014-02-22 14:05:38]framework.router.findroute.after: /, app, index, index
+[2014-02-22 14:05:38]framework.controller.construct.before: App_Controller_Index
+[2014-02-22 14:05:38]framework.view.construct.before: H:\xampp\htdocs/modules/app/views/layouts/basic.phtml
+[2014-02-22 14:05:38]framework.view.construct.after: H:\xampp\htdocs/modules/app/views/layouts/basic.phtml
+[2014-02-22 14:05:38]framework.view.construct.before: H:\xampp\htdocs/modules/app/views/index/index.phtml
+[2014-02-22 14:05:38]framework.view.construct.after: H:\xampp\htdocs/modules/app/views/index/index.phtml
+[2014-02-22 14:05:38]framework.controller.construct.after: App_Controller_Index
+Average: 0.0024763333333333, Longest: 0.01, Shortest: 0, Total: 0.069004
+[2014-02-22 14:05:38]framework.module.initialize.before: App
+[2014-02-22 14:05:38]framework.module.initialize.before: Admin
+[2014-02-22 14:05:38]framework.module.initialize.before: Cron
+[2014-02-22 14:05:38]framework.configuration.initialize.before: ini
+[2014-02-22 14:05:38]framework.configuration.initialize.after: ini
+[2014-02-22 14:05:38]framework.database.initialize.before: 
+[2014-02-22 14:05:38]framework.database.initialize.after: mysql
+[2014-02-22 14:05:38]framework.cache.initialize.before: 
+[2014-02-22 14:05:38]framework.cache.initialize.after: filecache
+[2014-02-22 14:05:38]framework.session.initialize.before: 
+[2014-02-22 14:05:38]framework.session.initialize.after: server
+[2014-02-22 14:05:38]framework.security.initialize.before: 
+[2014-02-22 14:05:38]framework.security.initialize.after: 
+[2014-02-22 14:05:38]framework.router.findroute.before: /favicon.ico
+[2014-02-22 14:05:38]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0019334666666667, Longest: 0.007001, Shortest: 0, Total: 0.034002
+[2014-02-22 14:05:38]framework.module.initialize.before: App
+[2014-02-22 14:05:38]framework.module.initialize.before: Admin
+[2014-02-22 14:05:38]framework.module.initialize.before: Cron
+[2014-02-22 14:05:38]framework.configuration.initialize.before: ini
+[2014-02-22 14:05:38]framework.configuration.initialize.after: ini
+[2014-02-22 14:05:38]framework.database.initialize.before: 
+[2014-02-22 14:05:38]framework.database.initialize.after: mysql
+[2014-02-22 14:05:38]framework.cache.initialize.before: 
+[2014-02-22 14:05:38]framework.cache.initialize.after: filecache
+[2014-02-22 14:05:38]framework.session.initialize.before: 
+[2014-02-22 14:05:38]framework.session.initialize.after: server
+[2014-02-22 14:05:38]framework.security.initialize.before: 
+[2014-02-22 14:05:38]framework.security.initialize.after: 
+[2014-02-22 14:05:38]framework.router.findroute.before: /favicon.ico
+[2014-02-22 14:05:38]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0016668, Longest: 0.0060009999999999, Shortest: 0, Total: 0.027002
+[2014-02-22 14:05:38]framework.module.initialize.before: App
+[2014-02-22 14:05:38]framework.module.initialize.before: Admin
+[2014-02-22 14:05:38]framework.module.initialize.before: Cron
+[2014-02-22 14:05:38]framework.configuration.initialize.before: ini
+[2014-02-22 14:05:38]framework.configuration.initialize.after: ini
+[2014-02-22 14:05:38]framework.database.initialize.before: 
+[2014-02-22 14:05:38]framework.database.initialize.after: mysql
+[2014-02-22 14:05:38]framework.cache.initialize.before: 
+[2014-02-22 14:05:38]framework.cache.initialize.after: filecache
+[2014-02-22 14:05:38]framework.session.initialize.before: 
+[2014-02-22 14:05:38]framework.session.initialize.after: server
+[2014-02-22 14:05:38]framework.security.initialize.before: 
+[2014-02-22 14:05:38]framework.security.initialize.after: 
+[2014-02-22 14:05:38]framework.router.findroute.before: /favicon.ico
+[2014-02-22 14:05:38]framework.router.findroute.after: /favicon.ico, app, favicon.ico, index
+Average: 0.0016667333333333, Longest: 0.007, Shortest: 0, Total: 0.028001

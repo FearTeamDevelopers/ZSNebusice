@@ -1,0 +1,1 @@
+[2014-02-22 14:05:38] ~ Warning ~ controller.php ~ 222 ~ Cannot modify header information - headers already sent by (output started at H:\xampp\htdocs\vendors\thcframe\core\core.php:389)

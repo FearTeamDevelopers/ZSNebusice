@@ -1,0 +1,47 @@
+<article class="grid_12">
+    <h1>Add sponsor</h1>
+
+    <form method="post" action="#" class="stdform" enctype="multipart/form-data">
+        <input type="hidden" name="MAX_FILE_SIZE" value="5000000"/>
+        <p>
+            <label>Title*</label>
+            <span class="field">
+                <input type="text" name="title" class="longinput" required value=""/>
+            </span>
+            {if isset($errors["title"])}
+            <span class="error">
+                {echo join("<br/>", $errors["title"])}
+            </span>
+            {/if}
+        </p>
+        <p>
+            <label>URL*</label>
+            <span class="field">
+                <input type="url" name="url" class="longinput" required value="" />
+            </span>
+            {if isset($errors["url"])}
+            <span class="error">
+                {echo join("<br/>", $errors["url"])}
+            </span>
+            {/if}
+        </p>
+
+        <p>
+            <label>Logo*</label>
+            <span class="field">
+                <input type="file" name="logo" class="longinput" />
+            </span>
+            {if isset($errors["logo"])}
+            <span class="error">
+                {echo join("<br/>", $errors["logo"])}
+            </span>
+            {/if}
+        </p>
+
+        <p>
+            <span class="field">
+                <input type="submit" name="addSponsor" value="Add sponsor" />
+            </span>
+        </p>
+    </form>
+</article>
