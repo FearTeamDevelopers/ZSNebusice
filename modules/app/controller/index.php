@@ -123,7 +123,7 @@ class App_Controller_Index extends Controller
     }
 
     /**
-     * 
+     * @before _secured, _rodic
      */
     public function stepthree()
     {
