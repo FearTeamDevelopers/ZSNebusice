@@ -227,10 +227,10 @@ class Security extends Base
     public function authenticate($loginCredential, $password, $admin = false)
     {
         $hash = $this->getHash($password);
-        
+
         $user = \App_Model_User::first(array(
-                    "{$this->_loginCredentials[0]} = ?" => $loginCredential,
-                    "{$this->_loginCredentials[1]} = ?" => $hash
+                    "{$this->_loginCredentials["login"]} = ?" => $loginCredential,
+                    "{$this->_loginCredentials["pass"]} = ?" => $hash
         ));
         
         if (NULL !== $user) {

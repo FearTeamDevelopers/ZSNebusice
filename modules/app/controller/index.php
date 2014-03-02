@@ -29,7 +29,7 @@ class App_Controller_Index extends Controller
             $uciteleAr = RequestMethods::post('checkboxUcitele');
 
             if (empty($uciteleAr)) {
-                $view->set('errors', array('ucitele', 'Neni vybran zadny ucitel'));
+                $errors['ucitError'] = array('Neni vybran zadny ucitel');
             } else {
                 $session = Registry::get("session");
                 $session->set("uciteleAr", serialize($uciteleAr));
@@ -37,8 +37,9 @@ class App_Controller_Index extends Controller
                 self::redirect('/steptwo');
             }
         }
-
-        $view->set('ucitele', $ucitele);
+        
+        $view->set('errors', $errors)
+                ->set('ucitele', $ucitele);
     }
 
     /**
@@ -52,11 +53,11 @@ class App_Controller_Index extends Controller
         //pole id ucitelu
         $session = Registry::get("session");
         $uciteleAr = unserialize($session->get("uciteleAr"));
-
+        
         $casy = App_Model_Cas::all();
         $selectedProf = App_Model_User::all(
-                        array('id_user IN (?)' => $uciteleAr,
-                    'role = ?' => 'role_ucitel'), array('id_user', 'jmeno', 'prijmeni')
+                        array('id IN ?' => array_values($uciteleAr),
+                    'role = ?' => 'role_ucitel'), array('id', 'firstname', 'lastname')
         );
 
         if (RequestMethods::post("submitStepTwo")) {
@@ -81,14 +82,14 @@ class App_Controller_Index extends Controller
                 );
 
                 //pokud nejaky zaznam existuje vytvori chybu
-                if (FALSE !== $obsazeneCasy) {
-                    $errors['selectbox_' . $id] = "Tento cas je jiz zabran";
+                if (!empty($obsazeneCasy)) {
+                    $errors['selectbox_' . $id] = array("Tento cas je jiz zabran");
                     continue;
                 }
 
                 //kontrola na duplicitni casy ve formulari
                 if (array_key_exists($idcasu, $usedCasy)) {
-                    $errors['selectbox_' . $id] = "Tento cas je jiz vybran u jineho ucitele";
+                    $errors['selectbox_' . $id] = array("Tento cas je jiz vybran u jineho ucitele");
                 } else {
                     $usedCasy[] = $idcasu;
                 }
@@ -103,7 +104,7 @@ class App_Controller_Index extends Controller
                 if ($konzultace->validate()) {
                     $newIds[] = $konzultace->save();
                 } else {
-                    $errors['selectbox_' . $id] = "Chyba pri ukladani zaznamu";
+                    $errors['selectbox_' . $id] = array("Chyba pri ukladani zaznamu");
                 }
             }
 
@@ -128,8 +129,7 @@ class App_Controller_Index extends Controller
     public function stepthree()
     {
         $view = $this->getActionView();
-        $userId = 7;
-        //$userId = $this->getUser()->getId();
+        $userId = $this->getUser()->getId();
         $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
 
         $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
@@ -137,7 +137,6 @@ class App_Controller_Index extends Controller
                 ->where("tb_konzultace.id_rodic = ?", $userId);
 
         $konzultace = App_Model_Konzultace::initialize($query);
-        //print("<pre>".print_r($konzultace,true)."</pre>");die();
         $view->set("konzultace", $konzultace);
 
         if (RequestMethods::post("submitStepThree") == "Potvrdit") {

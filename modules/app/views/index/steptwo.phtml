@@ -5,9 +5,9 @@
             {script $iduc = $ucitel->id}
             {echo $ucitel->firstname." ".$ucitel->lastname}
         </label>
-        <select name="selectbox_{echo $ucitel->id">
+        <select name="selectbox_{echo $ucitel->id}">
             {foreach $cas in $casy}
-            <option value="{echo $ucitel->id .'-'.$cas->id">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
+            <option value="{echo $ucitel->id} - {echo $cas->id}">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
             {/foreach}
         </select>
         <span class="error">
