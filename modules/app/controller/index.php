@@ -23,13 +23,9 @@ class App_Controller_Index extends Controller
         //vyber ucitelu
         $view = $this->getActionView();
 
-
         $ucitele = App_Model_User::all(
                 array('role = ?' => 'role_ucitel')
                 );
-
-        $ucitele = App_Model_Ucitel::all();
-
 
         $view->set('ucitele', $ucitele);
     }
