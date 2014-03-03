@@ -9,21 +9,20 @@ use THCFrame\Registry\Registry;
  *
  * @author Tomy
  */
-class App_Controller_Index extends Controller {
+class App_Controller_Index extends Controller
+{
 
     /**
      * @before _secured,   
      */
-    public function index() {
-        $security = Registry::get("security");
-        $potvrzeno = $security->getUser()->potvrzeno;
-        print_r($potvrzeno);
+    public function index()
+    {
+        $potvrzeno = $this->getUser()->getPotvrzeno();
+
         if ($potvrzeno == 0) {
             //vyber ucitelu
             $view = $this->getActionView();
             $userId = $userId = $this->getUser()->getId();
-
-
 
             $ucitele = App_Model_User::all(
                             array('role = ?' => 'role_ucitel'
@@ -63,13 +62,14 @@ class App_Controller_Index extends Controller {
     /**
      * @before _secured, _rodic                                                                                               
      */
-    public function steptwo() {
-        $security = Registry::get("security");
-        $potvrzeno = $security->getUser()->potvrzeno;
-        print_r($potvrzeno);
+    public function steptwo()
+    {
+        $potvrzeno = $this->getUser()->getPotvrzeno();
+
         if ($potvrzeno == 1) {
             $view = $this->getActionView();
             $userId = $userId = $this->getUser()->getId();
+            
             $bla = App_Model_User::first(
                             array(
                                 'id=?' => $userId
@@ -87,12 +87,12 @@ class App_Controller_Index extends Controller {
 
             if (RequestMethods::post("submitStepTwo") == 'Zpet') {
                 $bla = App_Model_User::first(
-                                    array(
-                                        'id=?' => $userId
-                                    )
-                    );
-                    $bla->potvrzeno = 0;
-                    $bla->save();
+                                array(
+                                    'id=?' => $userId
+                                )
+                );
+                $bla->potvrzeno = 0;
+                $bla->save();
                 self::redirect("/");
             }
             if (RequestMethods::post("submitStepTwo") == 'Pokracovat') {
@@ -169,9 +169,10 @@ class App_Controller_Index extends Controller {
     /**
      * @before _secured, _rodic 
      */
-    public function stepthree() {
-        $security = Registry::get("security");
-        $potvrzeno = $security->getUser()->potvrzeno;
+    public function stepthree()
+    {
+        $potvrzeno = $this->getUser()->getPotvrzeno();
+
         if ($potvrzeno == 2) {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
@@ -181,20 +182,24 @@ class App_Controller_Index extends Controller {
             $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
                     ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
                     ->where("tb_konzultace.id_rodic = ?", $userId);
-            $bla = App_Model_User::first(
-                            array(
-                                'id=?' => $userId
-                            )
-            );
+
+
             $konzultace = App_Model_Konzultace::initialize($query);
             $view->set("konzultace", $konzultace);
+
             if (RequestMethods::post("submitStepThree") == "Potvrdit") {
-                $view->flashMessage("Konzultace jsou nyní potvrzeny");
+
+                $bla = App_Model_User::first(
+                                array(
+                                    'id=?' => $userId
+                                )
+                );
+
                 $bla->potvrzeno = 3;
                 $bla->save();
+                $view->flashMessage("Konzultace jsou nyní potvrzeny");
                 self::redirect("/stepfour");
             } elseif (RequestMethods::post("submitStepThree") == "Zrusit") {
-
                 $session = Registry::get("session");
                 $konzIds = unserialize($session->get("newIds"));
 
@@ -232,9 +237,10 @@ class App_Controller_Index extends Controller {
     /**
      * @before _secured, _rodic  
      */
-    public function stepfour() {
-       $security = Registry::get("security");
-        $potvrzeno = $security->getUser()->potvrzeno;
+    public function stepfour()
+    {
+        $potvrzeno = $this->getUser()->getPotvrzeno();
+
         if ($potvrzeno == 0) {
             self::redirect("/");
         } elseif ($potvrzeno == 1) {
@@ -244,14 +250,26 @@ class App_Controller_Index extends Controller {
         } else {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
-            $bla = App_Model_User::first(
-                            array(
-                                'id=?' => $userId
-                            )
-            );
+
+            $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
+
+            $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
+                    ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
+                    ->where("tb_konzultace.id_rodic = ?", $userId);
+
+
+            $konzultace = App_Model_Konzultace::initialize($query);
+            $view->set("konzultace", $konzultace);
+
             if (RequestMethods::post("submitStepFour") == "Zrusit") {
+
+                $bla = App_Model_User::first(
+                                array(
+                                    'id=?' => $userId
+                                )
+                );
+
                 //potvrzeno=0
-                $view->flashMessage("Potvrzení zrušeno");
                 $bla->potvrzeno = 0;
                 $bla->save();
 
@@ -275,6 +293,7 @@ class App_Controller_Index extends Controller {
 
                 if (empty($errors)) {
                     $database->commitTransaction();
+                    $view->flashMessage("Potvrzení zrušeno");
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neocekavana chyba");
