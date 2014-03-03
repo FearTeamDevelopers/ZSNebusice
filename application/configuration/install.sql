@@ -1,5 +1,3 @@
-select firstname, lastname from tb_user where role = 'role_ucitel' and id not in( select id_ucitel from tb_konzultace where id_rodic = 6)
-
 DROP TABLE IF EXISTS `tb_konzultace`;
 DROP TABLE IF EXISTS `tb_cas`;
 DROP TABLE IF EXISTS `tb_user`;
@@ -13,7 +11,7 @@ CREATE TABLE `tb_user` (
 `firstname` varchar (50) NOT NULL DEFAULT '',
 `lastname` varchar (50) NOT NULL DEFAULT '',
 `kabinet` varchar (10) NOT NULL DEFAULT '',
-`potvrzeno` tinyint (5) NOT NULL DEFAULT 0,
+`potvrzeno` int (10) NOT NULL DEFAULT 0,
 PRIMARY KEY (`id`),
 UNIQUE (`email`),
 KEY `ix_user_active` (`active`),
@@ -51,7 +49,7 @@ insert into tb_user values(default, 'test10@test.cz', 'ba3253876aed6bc22d4a6ff53
              default, 'role_ucitel', 'Jakub', 'Smutný', 'k104', default);
 
 insert into tb_user values(default, 'test@test.cz', 'ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413', 
-            default, 'role_rodic', 'Pan','Rodič', default,1),
+            default, 'role_rodic', 'Pan','Rodič', default,default),
         (default, 'test2@test.cz','ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413',
             default, 'role_rodic', 'Paní','Rodič', default, default),
         (default, 'test3@test.cz','ba3253876aed6bc22d4a6ff53d8406c6ad864195ed144ab5c87621b6c233b548baeae6956df346ec8c17f5ea10f35ee3cbc514797ed7ddd3145464e2a0bab413', 

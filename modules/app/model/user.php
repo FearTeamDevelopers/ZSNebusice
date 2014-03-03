@@ -88,7 +88,7 @@ class App_Model_User extends Model implements UserInterface
        /**
      * @column
      * @readwrite
-     * @type boolean
+     * @type integer
      *
      * @label potvrzeno
      */
