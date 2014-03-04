@@ -87,12 +87,12 @@ class App_Controller_Index extends Controller {
 
             if (RequestMethods::post("submitStepTwo") == 'Zpet') {
                 $bla = App_Model_User::first(
-                                    array(
-                                        'id=?' => $userId
-                                    )
-                    );
-                    $bla->potvrzeno = 0;
-                    $bla->save();
+                                array(
+                                    'id=?' => $userId
+                                )
+                );
+                $bla->potvrzeno = 0;
+                $bla->save();
                 self::redirect("/");
             }
             if (RequestMethods::post("submitStepTwo") == 'Pokracovat') {
@@ -233,7 +233,7 @@ class App_Controller_Index extends Controller {
      * @before _secured, _rodic  
      */
     public function stepfour() {
-       $security = Registry::get("security");
+        $security = Registry::get("security");
         $potvrzeno = $security->getUser()->potvrzeno;
         if ($potvrzeno == 0) {
             self::redirect("/");
