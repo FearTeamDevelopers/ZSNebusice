@@ -42,8 +42,7 @@ class App_Controller_Index extends Controller
                                         'id=?' => $userId
                                     )
                     );
-                    $bla->potvrzeno = 1;
-                    $bla->save();
+                    $this->getUser()->setPotvrzeno(1);
                     self::redirect('/steptwo');
                 }
             }
@@ -62,14 +61,13 @@ class App_Controller_Index extends Controller
     /**
      * @before _secured, _rodic                                                                                               
      */
-    public function steptwo()
-    {
+    public function steptwo() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
 
         if ($potvrzeno == 1) {
             $view = $this->getActionView();
             $userId = $userId = $this->getUser()->getId();
-            
+
             $bla = App_Model_User::first(
                             array(
                                 'id=?' => $userId
@@ -91,8 +89,7 @@ class App_Controller_Index extends Controller
                                     'id=?' => $userId
                                 )
                 );
-                $bla->potvrzeno = 0;
-                $bla->save();
+                $this->getUser()->setPotvrzeno(0);
                 self::redirect("/");
             }
             if (RequestMethods::post("submitStepTwo") == 'Pokracovat') {
@@ -146,8 +143,7 @@ class App_Controller_Index extends Controller
                     $database->commitTransaction();
                     $session->set("newIds", serialize($newIds));
                     $view->flashMessage("Casy navstev ulozeny");
-                    $bla->potvrzeno = 2;
-                    $bla->save();
+                    $this->getUser()->setPotvrzeno(2);
                     self::redirect("/stepthree");
                 } else {
                     $view->set("errors", $errors);
@@ -162,15 +158,14 @@ class App_Controller_Index extends Controller
         } elseif ($potvrzeno == 2) {
             self::redirect("/stepthree");
         } else {
-            self::reddirect("/stepfour");
+            self::redirect("/stepfour");
         }
     }
 
     /**
      * @before _secured, _rodic 
      */
-    public function stepthree()
-    {
+    public function stepthree() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
 
         if ($potvrzeno == 2) {
@@ -194,9 +189,7 @@ class App_Controller_Index extends Controller
                                     'id=?' => $userId
                                 )
                 );
-
-                $bla->potvrzeno = 3;
-                $bla->save();
+                $this->getUser()->setPotvrzeno(3);
                 $view->flashMessage("Konzultace jsou nyní potvrzeny");
                 self::redirect("/stepfour");
             } elseif (RequestMethods::post("submitStepThree") == "Zrusit") {
@@ -219,6 +212,7 @@ class App_Controller_Index extends Controller
 
                 if (empty($errors)) {
                     $database->commitTransaction();
+                     $this->getUser()->setPotvrzeno(0);
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neocekavana chyba");
@@ -230,24 +224,17 @@ class App_Controller_Index extends Controller
         } elseif ($potvrzeno == 1) {
             self::redirect("/steptwo");
         } else {
-            self::reddirect("/stepfour");
+            self::redirect("/stepfour");
         }
     }
 
     /**
      * @before _secured, _rodic  
      */
-    public function stepfour()
-    {
+    public function stepfour() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
 
-        if ($potvrzeno == 0) {
-            self::redirect("/");
-        } elseif ($potvrzeno == 1) {
-            self::redirect("/steptwo");
-        } elseif ($potvrzeno == 2) {
-            self::redirect("/stepthree");
-        } else {
+        if ($potvrzeno >2 ) {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
 
@@ -270,10 +257,7 @@ class App_Controller_Index extends Controller
                 );
 
                 //potvrzeno=0
-                $bla->potvrzeno = 0;
-                $bla->save();
-
-                //smazani vsech zaznamu s prihlasenym uzivatelem z konzultaci
+                $this->getUser()->setPotvrzeno(0);
                 $database = Registry::get("database");
                 $database->beginTransaction();
 
@@ -301,7 +285,12 @@ class App_Controller_Index extends Controller
                 }
                 self::redirect("/");
             }
-        }
-    }
+        } elseif ($potvrzeno == 1) {
+            self::redirect("/steptwo");
+        } elseif ($potvrzeno == 2) {
+            self::redirect("/stepthree");
+        } elseif ($potvrzeno == 0){
+            self::redirect("/");
+    }}
 
 }
