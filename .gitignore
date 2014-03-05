@@ -2,3 +2,4 @@
 /application/configuration/install.sql
 /application/logs/
 /application/configuration/
+/nbproject/private/
