@@ -19,42 +19,37 @@
         <title>Konzultace</title>
     </head>
     <body lang="cs">
-        <div id="headerWrapper">
-            <header class="content">
-                <h1><a href="/" id="logo">Konzultace</a></h1>
-               {include menu.phtml}
-            </header>
-        </div>
-
-        <div class="clear"></div>
-
-        <div id="contentWrapper">
-            <div class="content">
-                {if !empty($flashMessage)}
-                <section class="container_12">
-                    <div class="ad-notif-info grid_12"><p>{echo $flashMessage}</p></div>
-                </section>
-                {/if}
-
-                <section class="container_12">
-                    {yield action}
-                </section>
+        <div id="header">
+            <div class="headerLeft">
+                <div class="logo">
+                    <a href="http://zs.zsnebusice.cz/">
+                        Praha - Nebušice
+                        <span></span>
+                    </a>
+                </div>
             </div>
+            <div class="headerRight">
+                <div class="image">
+                </div>
+            </div>
+
+        </div>
+            <div class="menu">
+            {include menu.phtml}
         </div>
 
-        <div class="clear"></div>
+        <div id="content">
 
-        <div id="footerWrapper">
-            <footer class="content">
-                <section class="container_12">
-                    <div class="grid_4">
-                        <span>
-                            Zš Nebušice - Konzultace | Made by Tomáš Sláma, Tomáš Církovský, Lucie Jandáková<br/>
-                        </span>
-                    </div>
-               
-                </section>
-            </footer>
+            {if !empty($flashMessage)}
+            <section class="container_12">
+                <div class="ad-notif-info grid_12"><p>{echo $flashMessage}</p></div>
+            </section>
+            {/if}
+
+            <section class="container_12">
+                {yield action}
+            </section>
+
         </div>
 
         <script type="text/javascript" src="/public/js/global.js"></script>

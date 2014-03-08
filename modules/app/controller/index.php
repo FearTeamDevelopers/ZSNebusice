@@ -9,18 +9,16 @@ use THCFrame\Registry\Registry;
  *
  * @author Tomy
  */
-class App_Controller_Index extends Controller
-{
+class App_Controller_Index extends Controller {
 
     /**
      * @before _secured,   
      */
-    public function index()
-    {
+    public function index() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
 
         if ($potvrzeno == 0) {
-            //vyber ucitelu
+            //vyber ucitel
             $view = $this->getActionView();
             $userId = $userId = $this->getUser()->getId();
 
@@ -42,7 +40,9 @@ class App_Controller_Index extends Controller
                                         'id=?' => $userId
                                     )
                     );
+                    $bla->setPotvrzeno(1);
                     $this->getUser()->setPotvrzeno(1);
+                    $bla->save();
                     self::redirect('/steptwo');
                 }
             }
@@ -67,29 +67,46 @@ class App_Controller_Index extends Controller
         if ($potvrzeno == 1) {
             $view = $this->getActionView();
             $userId = $userId = $this->getUser()->getId();
-
-            $bla = App_Model_User::first(
-                            array(
-                                'id=?' => $userId
-                            )
-            );
             //pole id ucitelu
             $session = Registry::get("session");
             $uciteleAr = unserialize($session->get("uciteleAr"));
 
-            $casy = App_Model_Cas::all();
             $selectedProf = App_Model_User::all(
                             array('id IN ?' => array_values($uciteleAr),
                         'role = ?' => 'role_ucitel'), array('id', 'firstname', 'lastname')
             );
 
+            foreach ($selectedProf as $prof) {
+                $cas = App_Model_Konzultace::all(array(
+                            'id_ucitel = ?' => $prof->id
+                                ), array('id_cas'));
+
+                $ids = array();
+                foreach ($cas as $casid) {
+                    $ids[] = $casid->id_cas;
+                }
+                if (!empty($ids)) {
+                    $volneCasy = App_Model_Cas::all(array(
+                                'id NOT IN ?' => $ids
+                    ));
+                } else {
+                    $volneCasy = App_Model_Cas::all();
+                }
+
+                $prof->casy = $volneCasy;
+            }
+
+
+//            select id_cas from konzultace where id_ucitel = selectedUcitel
             if (RequestMethods::post("submitStepTwo") == 'Zpet') {
                 $bla = App_Model_User::first(
                                 array(
                                     'id=?' => $userId
                                 )
                 );
+                $bla->setPotvrzeno(0);
                 $this->getUser()->setPotvrzeno(0);
+                $bla->save();
                 self::redirect("/");
             }
             if (RequestMethods::post("submitStepTwo") == 'Pokracovat') {
@@ -143,7 +160,15 @@ class App_Controller_Index extends Controller
                     $database->commitTransaction();
                     $session->set("newIds", serialize($newIds));
                     $view->flashMessage("Casy navstev ulozeny");
+                    $bla = App_Model_User::first(
+                                    array(
+                                        'id=?' => $userId
+                                    )
+                    );
+                    $bla->setPotvrzeno(2);
                     $this->getUser()->setPotvrzeno(2);
+                    $bla->save();
+
                     self::redirect("/stepthree");
                 } else {
                     $view->set("errors", $errors);
@@ -151,8 +176,7 @@ class App_Controller_Index extends Controller
                 }
             }
 
-            $view->set("casy", $casy)
-                    ->set("ucitele", $selectedProf);
+            $view->set("ucitele", $selectedProf);
         } elseif ($potvrzeno == 0) {
             self::redirect("/");
         } elseif ($potvrzeno == 2) {
@@ -189,7 +213,9 @@ class App_Controller_Index extends Controller
                                     'id=?' => $userId
                                 )
                 );
+                $bla->setPotvrzeno(3);
                 $this->getUser()->setPotvrzeno(3);
+                $bla->save();
                 $view->flashMessage("Konzultace jsou nyní potvrzeny");
                 self::redirect("/stepfour");
             } elseif (RequestMethods::post("submitStepThree") == "Zrusit") {
@@ -212,7 +238,14 @@ class App_Controller_Index extends Controller
 
                 if (empty($errors)) {
                     $database->commitTransaction();
-                     $this->getUser()->setPotvrzeno(0);
+                    $bla = App_Model_User::first(
+                                    array(
+                                        'id=?' => $userId
+                                    )
+                    );
+                    $bla->setPotvrzeno(0);
+                    $this->getUser()->setPotvrzeno(0);
+                    $bla->save();
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neocekavana chyba");
@@ -233,14 +266,13 @@ class App_Controller_Index extends Controller
      */
     public function stepfour() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
-
-        if ($potvrzeno >2 ) {
+        if ($potvrzeno > 2) {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
 
             $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
 
-            $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
+            $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname","uc.kabinet"))
                     ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
                     ->where("tb_konzultace.id_rodic = ?", $userId);
 
@@ -249,15 +281,8 @@ class App_Controller_Index extends Controller
             $view->set("konzultace", $konzultace);
 
             if (RequestMethods::post("submitStepFour") == "Zrusit") {
-
-                $bla = App_Model_User::first(
-                                array(
-                                    'id=?' => $userId
-                                )
-                );
-
                 //potvrzeno=0
-                $this->getUser()->setPotvrzeno(0);
+
                 $database = Registry::get("database");
                 $database->beginTransaction();
 
@@ -278,19 +303,27 @@ class App_Controller_Index extends Controller
                 if (empty($errors)) {
                     $database->commitTransaction();
                     $view->flashMessage("Potvrzení zrušeno");
+                                        $bla = App_Model_User::first(
+                                    array(
+                                        'id=?' => $userId
+                                    )
+                    );
+                    $bla->setPotvrzeno(0);
+                    $this->getUser()->setPotvrzeno(0);
+                    $bla->save();
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neocekavana chyba");
                     $database->rollbackTransaction();
                 }
-                self::redirect("/");
             }
         } elseif ($potvrzeno == 1) {
             self::redirect("/steptwo");
         } elseif ($potvrzeno == 2) {
             self::redirect("/stepthree");
-        } elseif ($potvrzeno == 0){
+        } elseif ($potvrzeno == 0) {
             self::redirect("/");
-    }}
+        }
+    }
 
 }

@@ -1,6 +1,8 @@
 <article class="grid_12">
-    <h1>Seznam učitelů</h1>
-    <h3>Vyberte učitele, se kterými máte zájem o konzultaci</h3>
+    <div class="info"> 
+        <h1>Seznam učitelů</h1>
+        <h3>Vyberte učitele, se kterými máte zájem o konzultaci</h3>
+    </div>
     <div class="grid_6">
 
         <form action="#" method="post">
@@ -9,6 +11,7 @@
                 {echo join("<br/>", $errors["ucitError"])}
             </span>
             {/if}
+            <br/>
             <table>
                 <tr>
                     <td>Jméno učitele</td>
@@ -21,10 +24,10 @@
                     </td>
                 </tr>
                 {/foreach}
-                
+
             </table>
 
-            <input type="submit" name="submitStepOne" value="Pokracovat" />
+            <input class="continue" type="submit" name="submitStepOne" value="Pokracovat" />
         </form>
     </div>
 </article>

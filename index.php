@@ -4,7 +4,7 @@ define("DEBUG", true);
 define("APP_PATH", __DIR__);
 
 // core
-require("./vendors/thcrame/core/core.php");
+require("./vendors/thcframe/core/core.php");
 THCFrame\Core\Core::initialize();
 
 // plugins

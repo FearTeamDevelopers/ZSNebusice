@@ -1,7 +1,24 @@
 <article class="grid_12">
     
-    Vse bylo uspesne ulozeno
-        <form method="post" action="#">
-        <input type="submit" name="submitStepFour" value="Zrusit" />
+        <div class="info"> 
+        <h1>Váš časový rozvrh</h1>
+    </div>
+      <table class="finalTable">
+        <tr>
+        <td>Jméno učitele</td>
+        <td>Čas</td>
+            <center><td>Kabinet</td>
+        </tr>
+        {foreach $k in $konzultace}
+        <tr>
+            <td>{echo $k->firstname." ".$k->lastname}</td>
+            <td>{echo $k->cas_start." - ".$k->cas_end}</td>
+            <td>{echo $k->kabinet}</td>
+        </tr>
+        {/foreach}
+    </table>
+    
+    <form method="post" action="#">
+        <input class="back" type="submit" name="submitStepFour" value="Zrusit" />
     </form>
 </article>

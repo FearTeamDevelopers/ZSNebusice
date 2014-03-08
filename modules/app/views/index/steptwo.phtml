@@ -1,27 +1,42 @@
 <article class="grid_12">
     <form method="post" action="#">
-        {foreach $ucitel in $ucitele}
-        <label>
-            {script $iduc = $ucitel->id}
-            {echo $ucitel->firstname." ".$ucitel->lastname}
-        </label>
-        <select name="selectbox_{echo $ucitel->id}">
-            {foreach $cas in $casy}
-            <option value="{echo $ucitel->id} - {echo $cas->id}">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
-            {/foreach}
-        </select>
-        <span class="error">
-            {if isset($errors["selectbox_".$iduc])}
-            <span class="error">
-                {echo join("<br/>", $errors["selectbox_".$iduc])}
-            </span>
-            {/if}
-        </span>
-        <br/>
-        {/foreach}
+        <table>
+            <tr>
+                <td>Jméno učitele</td><td>Čas</td><td>&nbsp;</td>
+            </tr>
+            {foreach $ucitel in $ucitele}
+            <tr>
+                <td>
+                    <label for="selectbox_{echo $ucitel->id}">
+                        {script $iduc = $ucitel->id}
+                        {echo $ucitel->firstname." ".$ucitel->lastname}
+                    </label>
+                </td>
+                <td>
+                    {script $casy = $ucitel->casy}
+                    <select name="selectbox_{echo $ucitel->id}">
+                        {foreach $cas in $casy}
+                        <option value="{echo $ucitel->id} - {echo $cas->id}">{echo $cas->cas_start} - {echo $cas->cas_end}</option>
+                        {/foreach}
+                    </select>
 
-        <input type="submit" name="submitStepTwo" value="Pokracovat"/>
-        <input type="submit" name="submitStepTwo" value="Zpet"/>
+                </td>
+                <td>
+                    <span class="error">
+                        {if isset($errors["selectbox_".$iduc])}
+                        <span class="error">
+                            {echo join("<br/>", $errors["selectbox_".$iduc])}
+                        </span>
+                        {/if}
+                    </span>
+                </td>
+            </tr>
+
+            <br/>
+            {/foreach}
+        </table>
+        <input class="continue" type="submit" name="submitStepTwo" value="Pokracovat"/>
+        <input class="back" type="submit" name="submitStepTwo" value="Zpet"/>
     </form>
 </article>
 
