@@ -4,6 +4,7 @@
             <tr>
                 <td>Jméno učitele</td><td>Čas</td><td>&nbsp;</td>
             </tr>
+            {if !empty($ucitele)}
             {foreach $ucitel in $ucitele}
             <tr>
                 <td>
@@ -34,9 +35,10 @@
 
             <br/>
             {/foreach}
+            {/if}
         </table>
-        <input class="continue" type="submit" name="submitStepTwo" value="Pokracovat"/>
-        <input class="back" type="submit" name="submitStepTwo" value="Zpet"/>
+        <input class="continue" type="submit" name="submitStepTwo" value="Pokračovat"/>
+        <input class="back" type="submit" name="submitStepTwo" value="Zpět"/>
     </form>
 </article>
 

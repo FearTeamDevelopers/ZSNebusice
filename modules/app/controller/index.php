@@ -31,7 +31,8 @@ class App_Controller_Index extends Controller {
                 $uciteleAr = RequestMethods::post('checkboxUcitele');
 
                 if (empty($uciteleAr)) {
-                    $errors['ucitError'] = array('Neni vybran zadny ucitel');
+                    $errors['ucitError'] = array('Není vybrán žádný učitel');
+                    $view->set('errors', $errors);
                 } else {
                     $session = Registry::get("session");
                     $session->set("uciteleAr", serialize($uciteleAr));
@@ -40,15 +41,14 @@ class App_Controller_Index extends Controller {
                                         'id=?' => $userId
                                     )
                     );
-                    $bla->setPotvrzeno(1);
+                    $bla->potvrzeno = 1;
                     $this->getUser()->setPotvrzeno(1);
                     $bla->save();
                     self::redirect('/steptwo');
                 }
             }
 
-            $view->set('errors', $errors)
-                    ->set('ucitele', $ucitele);
+            $view->set('ucitele', $ucitele);
         } elseif ($potvrzeno == 1) {
             self::redirect("/steptwo");
         } elseif ($potvrzeno == 2) {
@@ -66,7 +66,8 @@ class App_Controller_Index extends Controller {
 
         if ($potvrzeno == 1) {
             $view = $this->getActionView();
-            $userId = $userId = $this->getUser()->getId();
+            $userId = $this->getUser()->getId();
+            
             //pole id ucitelu
             $session = Registry::get("session");
             $uciteleAr = unserialize($session->get("uciteleAr"));
@@ -98,19 +99,18 @@ class App_Controller_Index extends Controller {
 
 
 //            select id_cas from konzultace where id_ucitel = selectedUcitel
-            if (RequestMethods::post("submitStepTwo") == 'Zpet') {
+            if (RequestMethods::post("submitStepTwo") == 'Zpět') {
                 $bla = App_Model_User::first(
                                 array(
                                     'id=?' => $userId
                                 )
                 );
-                $bla->setPotvrzeno(0);
+                $bla->potvrzeno = 0;
                 $this->getUser()->setPotvrzeno(0);
                 $bla->save();
                 self::redirect("/");
             }
-            if (RequestMethods::post("submitStepTwo") == 'Pokracovat') {
-                $userId = $this->getUser()->getId();
+            if (RequestMethods::post("submitStepTwo") == 'Pokračovat') {
                 $usedCasy = array();
                 $errors = array();
 
@@ -131,13 +131,13 @@ class App_Controller_Index extends Controller {
                     );
                     //pokud nejaky zaznam existuje vytvori chybu
                     if (!empty($obsazeneCasy)) {
-                        $errors['selectbox_' . $id] = array("Tento cas je jiz zabran");
+                        $errors['selectbox_' . $id] = array("Tento čas je již zabrán");
                         continue;
                     }
 
                     //kontrola na duplicitni casy ve formulari
                     if (in_array($idcasu, $usedCasy)) {
-                        $errors['selectbox_' . $id] = array("Tento cas je jiz vybran u jineho ucitele");
+                        $errors['selectbox_' . $id] = array("Tento čas je již vybrán u jiného učitele");
                     } else {
                         $usedCasy[] = $idcasu;
                     }
@@ -152,20 +152,20 @@ class App_Controller_Index extends Controller {
                     if ($konzultace->validate()) {
                         $newIds[] = $konzultace->save();
                     } else {
-                        $errors['selectbox_' . $id] = array("Chyba pri ukladani zaznamu");
+                        $errors['selectbox_' . $id] = array("Chyba při ukládání záznamu");
                     }
                 }
 
                 if (empty($errors)) {
                     $database->commitTransaction();
                     $session->set("newIds", serialize($newIds));
-                    $view->flashMessage("Casy navstev ulozeny");
+                    $view->flashMessage("Časy návštěv uloženy");
                     $bla = App_Model_User::first(
                                     array(
                                         'id=?' => $userId
                                     )
                     );
-                    $bla->setPotvrzeno(2);
+                    $bla->potvrzeno = 2;
                     $this->getUser()->setPotvrzeno(2);
                     $bla->save();
 
@@ -213,12 +213,12 @@ class App_Controller_Index extends Controller {
                                     'id=?' => $userId
                                 )
                 );
-                $bla->setPotvrzeno(3);
+                $bla->potvrzeno = 3;
                 $this->getUser()->setPotvrzeno(3);
                 $bla->save();
                 $view->flashMessage("Konzultace jsou nyní potvrzeny");
                 self::redirect("/stepfour");
-            } elseif (RequestMethods::post("submitStepThree") == "Zrusit") {
+            } elseif (RequestMethods::post("submitStepThree") == "Zrušit") {
                 $session = Registry::get("session");
                 $konzIds = unserialize($session->get("newIds"));
 
@@ -232,7 +232,7 @@ class App_Controller_Index extends Controller {
                     );
 
                     if (!$konzultace->delete()) {
-                        $errors[] = "Chyba pri mazani zaznamu {$id}";
+                        $errors[] = "Chyba při mazáni záznamu {$id}";
                     }
                 }
 
@@ -248,7 +248,7 @@ class App_Controller_Index extends Controller {
                     $bla->save();
                     self::redirect("/");
                 } else {
-                    $view->flashMessage("Nastala neocekavana chyba");
+                    $view->flashMessage("Nastala neočekávaná chyba");
                     $database->rollbackTransaction();
                 }
             }
@@ -266,7 +266,8 @@ class App_Controller_Index extends Controller {
      */
     public function stepfour() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
-        if ($potvrzeno > 2) {
+        
+        if ($potvrzeno == 3) {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
 
@@ -280,9 +281,9 @@ class App_Controller_Index extends Controller {
             $konzultace = App_Model_Konzultace::initialize($query);
             $view->set("konzultace", $konzultace);
 
-            if (RequestMethods::post("submitStepFour") == "Zrusit") {
+            if (RequestMethods::post("submitStepFour") == "Zrušit") {
                 //potvrzeno=0
-
+                
                 $database = Registry::get("database");
                 $database->beginTransaction();
 
@@ -296,7 +297,7 @@ class App_Controller_Index extends Controller {
                     );
 
                     if (!$konzultace->delete()) {
-                        $errors[] = "Chyba pri mazani zaznamu {$id}";
+                        $errors[] = "Chyba při mazáni záznamu {$id}";
                     }
                 }
 
@@ -313,7 +314,7 @@ class App_Controller_Index extends Controller {
                     $bla->save();
                     self::redirect("/");
                 } else {
-                    $view->flashMessage("Nastala neocekavana chyba");
+                    $view->flashMessage("Nastala neočekávaná chyba");
                     $database->rollbackTransaction();
                 }
             }

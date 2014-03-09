@@ -61,6 +61,7 @@ table tr td{
     font-size:17px;
     font-weight:bold;
     margin-top:30px;
+    width:100px;
 }
 .finalTable td{
     border:1px solid black;
@@ -170,9 +171,7 @@ table tr td{
 .ad-notif-error { background-position: 0 -100px; border: 1px solid #c63434; }
 .ad-notif-info { background-position: 0 -150px; border: 1px solid #308eef; }
 
-.stdform p { margin: 15px 0; }
-.stdform span.field, .stdform div.field { margin-left: 170px; display: block; position: relative; }
-.stdform label { float: left; width: 150px; text-align: right; padding: 5px 20px 0 0; }
+
 .error { 
     float: none; 
     color: #ff6600; 
@@ -181,28 +180,39 @@ table tr td{
     text-align: left; 
     font-weight: bold; 
 }
-
-.stdform input { 
+.loginInput { 
     border: 1px solid #ccc; background: #fcfcfc; padding: 8px 5px; width: 300px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; 
-    -moz-box-shadow: inset 1px 1px 2px #ddd; -webkit-box-shadow: inset 1px 1px 2px #ddd; box-shadow: inset 1px 1px 2px #ddd; color: #666; 
+    -moz-box-shadow: inset 1px 1px 2px #ddd; -webkit-box-shadow: inset 1px 1px 2px #ddd; box-shadow: inset 1px 1px 2px #ddd; color: #666; margin-bottom:5px;
 }
-.stdform input:focus { background: #fff; -moz-box-shadow: inset 1px 1px 2px #eee; -webkit-box-shadow: inset 1px 1px 2px #eee; box-shadow: inset 1px 1px 2px #eee; }
-.stdform .smallinput { width: 40%; }
-.stdform .mediuminput { width: 60%; }
-.stdform .longinput { width: 80%; }
 
-.stdform textarea { 
-    border: 1px solid #ccc; background: #fcfcfc; padding: 8px 5px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; 
-    -moz-box-shadow: inset 1px 1px 2px #ddd; -webkit-box-shadow: inset 1px 1px 2px #ddd; box-shadow: inset 1px 1px 2px #ddd; color: #666;
-}
-.stdform textarea.error { border: 1px solid #ff6600; }
 
-.stdform select { 
-    border: 1px solid #ccc; padding: 7px 5px; min-width: 40%; background: #fcfcfc; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; 
-    -moz-box-shadow: inset 1px 1px 2px #ddd; -webkit-box-shadow: inset 1px 1px 2px #ddd; box-shadow: inset 1px 1px 2px #ddd; color: #666;
-}
-.stdform select.error { border: 1px solid #ff6600; }
+@media print{
 
-.stdform textarea:focus, .stdform select:focus { 
-    background: #fff; -moz-box-shadow: inset 1px 1px 2px #eee; -webkit-box-shadow: inset 1px 1px 2px #eee; box-shadow: inset 1px 1px 2px #eee; 
+    #header{
+        display:none;
+    }
+    .menu{
+        display:none;
+    }
+    .ad-notif-info{
+        display:none;
+    }
+    .info{
+        color:black !important;
+        border-color:black;
+    }
+    .back{
+        display:none;
+    }
+    body{
+        background:white !important;
+    }
+
+    h1{
+        color:black;
+    }
+    #content{
+        float:left;
+        box-shadow: 0 0 0px #fff;
+    }
 }
