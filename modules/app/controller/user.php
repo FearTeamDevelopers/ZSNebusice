@@ -42,7 +42,7 @@ class App_Controller_User extends Controller
                     if ($status) {
                         self::redirect("/");
                     } else {
-                        $view->set("account_error", "Email address and/or password are incorrect");
+                        $view->set("account_error", "Zadali jste špatný email nebo heslo");
                     }
                 } catch (\Exception $e) {
                     $view->set("account_error", $e->getMessage());

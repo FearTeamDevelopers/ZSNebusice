@@ -26,6 +26,12 @@ class App_Module extends Module{
             'module' => 'app',
             'controller' => 'user',
             'action' => 'logout',
+        ), 
+        array(
+            'pattern' => '/ucitel',
+            'module' => 'app',
+            'controller' => 'index',
+            'action' => 'ucitel',
         ),
         
         array(

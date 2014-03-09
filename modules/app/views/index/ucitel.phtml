@@ -1,0 +1,18 @@
+<article class="grid_12">
+    
+        <div class="info"> 
+        <h1>Váš časový rozvrh</h1>
+    </div>
+      <table class="finalTable">
+        <tr>
+        <td>Jméno rodiče</td>
+        <td>Čas</td>
+        </tr>
+        {foreach $k in $konzultace}
+        <tr>
+            <td>{echo $k->firstname." ".$k->lastname}</td>
+            <td>{echo $k->cas_start." - ".$k->cas_end}</td>
+        </tr>
+        {/foreach}
+    </table>
+</article>

@@ -12,7 +12,7 @@ use THCFrame\Registry\Registry;
 class App_Controller_Index extends Controller {
 
     /**
-     * @before _secured,   
+     * @before _secured,   _ucitel
      */
     public function index() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
@@ -272,7 +272,7 @@ class App_Controller_Index extends Controller {
 
             $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
 
-            $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname","uc.kabinet"))
+            $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname", "uc.kabinet"))
                     ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
                     ->where("tb_konzultace.id_rodic = ?", $userId);
 
@@ -303,7 +303,7 @@ class App_Controller_Index extends Controller {
                 if (empty($errors)) {
                     $database->commitTransaction();
                     $view->flashMessage("Potvrzení zrušeno");
-                                        $bla = App_Model_User::first(
+                    $bla = App_Model_User::first(
                                     array(
                                         'id=?' => $userId
                                     )
@@ -324,6 +324,24 @@ class App_Controller_Index extends Controller {
         } elseif ($potvrzeno == 0) {
             self::redirect("/");
         }
+    }
+
+    /*
+     * _ucitel
+     */
+
+    public function ucitel() {
+        $view = $this->getActionView();
+        $userId = $this->getUser()->getId();
+        $query = App_Model_Konzultace::getQuery(array("tb_konzultace.*"));
+
+        $query->join("tb_user", "tb_konzultace.id_rodic = rc.id", "rc", array("rc.firstname", "rc.lastname"))
+                ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
+                ->where("tb_konzultace.id_ucitel = ?", $userId);
+
+
+        $konzultace = App_Model_Konzultace::initialize($query);
+        $view->set("konzultace", $konzultace);
     }
 
 }

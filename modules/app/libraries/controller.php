@@ -14,7 +14,7 @@ use THCFrame\Controller\Controller as BaseController;
 class Controller extends BaseController {
 
     protected static $_imageExtensions = array('gif', 'jpg', 'png', 'jpeg');
-    
+
     /**
      * @protected
      */
@@ -34,7 +34,7 @@ class Controller extends BaseController {
         } else {
             $view = $this->getActionView();
 
-            $view->flashMessage("You has been logged out for long inactivity");
+            $view->flashMessage("Byl jste odhlášen z důvodu dlouhé neaktivity");
             $security->logout();
             self::redirect("/login");
         }
@@ -48,12 +48,24 @@ class Controller extends BaseController {
         $view = $this->getActionView();
 
         if ($security->getUser() && !$security->isGranted("role_rodic")) {
-            $view->flashMessage("Access denied!");
+            $view->flashMessage("Přístup zamítnut!");
             $security->logout();
             self::redirect("/login");
         }
     }
-    
+
+    /**
+     * @protected
+     */
+    public function _ucitel() {
+        $security = Registry::get("security");
+        $view = $this->getActionView();
+
+        if ($this->getUser()->getRole() == "role_ucitel") {
+            self::redirect("/ucitel");
+        }
+    }
+
     /**
      * 
      * @param type $options
@@ -63,12 +75,12 @@ class Controller extends BaseController {
 
         $database = Registry::get("database");
         $database->connect();
-        
+
         // schedule disconnect from database 
         Events::add("framework.controller.destruct.after", function($name) {
-                    $database = Registry::get("database");
-                    $database->disconnect();
-                });
+            $database = Registry::get("database");
+            $database->disconnect();
+        });
     }
 
     /**
