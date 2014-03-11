@@ -67,7 +67,7 @@ class App_Controller_Index extends Controller {
         if ($potvrzeno == 1) {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
-            
+
             //pole id ucitelu
             $session = Registry::get("session");
             $uciteleAr = unserialize($session->get("uciteleAr"));
@@ -106,8 +106,8 @@ class App_Controller_Index extends Controller {
                                 )
                 );
                 $bla->potvrzeno = 0;
-                $this->getUser()->setPotvrzeno(0);
                 $bla->save();
+                $this->getUser()->setPotvrzeno(0);
                 self::redirect("/");
             }
             if (RequestMethods::post("submitStepTwo") == 'Pokračovat') {
@@ -157,18 +157,18 @@ class App_Controller_Index extends Controller {
                 }
 
                 if (empty($errors)) {
-                    $database->commitTransaction();
-                    $session->set("newIds", serialize($newIds));
-                    $view->flashMessage("Časy návštěv uloženy");
                     $bla = App_Model_User::first(
                                     array(
                                         'id=?' => $userId
                                     )
                     );
+
                     $bla->potvrzeno = 2;
                     $this->getUser()->setPotvrzeno(2);
                     $bla->save();
-
+                    $database->commitTransaction();
+                    $session->set("newIds", serialize($newIds));
+                    $view->flashMessage("Časy návštěv uloženy");
                     self::redirect("/stepthree");
                 } else {
                     $view->set("errors", $errors);
@@ -237,15 +237,16 @@ class App_Controller_Index extends Controller {
                 }
 
                 if (empty($errors)) {
+                     $bla->setPotvrzeno(0);
+                    $this->getUser()->setPotvrzeno(0);
+                    $bla->save();
                     $database->commitTransaction();
                     $bla = App_Model_User::first(
                                     array(
                                         'id=?' => $userId
                                     )
                     );
-                    $bla->setPotvrzeno(0);
-                    $this->getUser()->setPotvrzeno(0);
-                    $bla->save();
+                   
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neočekávaná chyba");
@@ -266,7 +267,7 @@ class App_Controller_Index extends Controller {
      */
     public function stepfour() {
         $potvrzeno = $this->getUser()->getPotvrzeno();
-        
+
         if ($potvrzeno == 3) {
             $view = $this->getActionView();
             $userId = $this->getUser()->getId();
@@ -283,7 +284,7 @@ class App_Controller_Index extends Controller {
 
             if (RequestMethods::post("submitStepFour") == "Zrušit") {
                 //potvrzeno=0
-                
+
                 $database = Registry::get("database");
                 $database->beginTransaction();
 
@@ -302,8 +303,6 @@ class App_Controller_Index extends Controller {
                 }
 
                 if (empty($errors)) {
-                    $database->commitTransaction();
-                    $view->flashMessage("Potvrzení zrušeno");
                     $bla = App_Model_User::first(
                                     array(
                                         'id=?' => $userId
@@ -312,6 +311,9 @@ class App_Controller_Index extends Controller {
                     $bla->setPotvrzeno(0);
                     $this->getUser()->setPotvrzeno(0);
                     $bla->save();
+                    $database->commitTransaction();
+                    $view->flashMessage("Potvrzení zrušeno");
+
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neočekávaná chyba");
