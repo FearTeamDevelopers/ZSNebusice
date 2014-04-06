@@ -34,17 +34,22 @@
             </div>
 
         </div>
-            <div class="menu">
+        <div class="menu">
             {include menu.phtml}
         </div>
 
         <div id="content">
-
+            {if !empty($warnMessage)}
+            <section class="container_12">
+                <div class="ad-notif-warn grid_12"><p>{echo $warnMessage}</p></div>
+            </section>
+            {/if}
             {if !empty($flashMessage)}
             <section class="container_12">
                 <div class="ad-notif-info grid_12"><p>{echo $flashMessage}</p></div>
             </section>
             {/if}
+
 
             <section class="container_12">
                 {yield action}

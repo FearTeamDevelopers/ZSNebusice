@@ -116,7 +116,7 @@ class App_Controller_Index extends Controller {
 
                 $database = Registry::get("database");
                 $database->beginTransaction();
-
+                $bla = 0;
                 foreach ($uciteleAr as $id) {
                     $selectBox = RequestMethods::post("selectbox_" . $id);
 
@@ -140,6 +140,14 @@ class App_Controller_Index extends Controller {
                         $errors['selectbox_' . $id] = array("Tento čas je již vybrán u jiného učitele");
                     } else {
                         $usedCasy[] = $idcasu;
+                    }
+
+                    $i = count($usedCasy);
+                    if ($i > 1) {
+                        if ($idcasu - $usedCasy[$i - 2] > 3) {
+                            print_r("bla");
+                            $message = "mezi některými schůzkami máte dlouhé mezery";
+                        }
                     }
 
                     //vytvoreni novyho zaznamu ve vazebni tabulce
@@ -168,7 +176,8 @@ class App_Controller_Index extends Controller {
                     $bla->save();
                     $database->commitTransaction();
                     $session->set("newIds", serialize($newIds));
-                    $view->flashMessage("Časy návštěv uloženy");
+                    $view->flashMessage("časy uloženy");
+                    $view->warnMessage($message);
                     self::redirect("/stepthree");
                 } else {
                     $view->set("errors", $errors);
@@ -200,19 +209,21 @@ class App_Controller_Index extends Controller {
 
             $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname"))
                     ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
-                    ->where("tb_konzultace.id_rodic = ?", $userId);
+                    ->where("tb_konzultace.id_rodic = ?", $userId)
+                    ->order("c.cas_start");
 
 
             $konzultace = App_Model_Konzultace::initialize($query);
             $view->set("konzultace", $konzultace);
-
+            
+            $bla = App_Model_User::first(
+                            array(
+                                'id=?' => $userId
+                            )
+            );
             if (RequestMethods::post("submitStepThree") == "Potvrdit") {
 
-                $bla = App_Model_User::first(
-                                array(
-                                    'id=?' => $userId
-                                )
-                );
+
                 $bla->potvrzeno = 3;
                 $this->getUser()->setPotvrzeno(3);
                 $bla->save();
@@ -237,7 +248,7 @@ class App_Controller_Index extends Controller {
                 }
 
                 if (empty($errors)) {
-                     $bla->setPotvrzeno(0);
+                    $bla->setPotvrzeno(0);
                     $this->getUser()->setPotvrzeno(0);
                     $bla->save();
                     $database->commitTransaction();
@@ -246,7 +257,7 @@ class App_Controller_Index extends Controller {
                                         'id=?' => $userId
                                     )
                     );
-                   
+
                     self::redirect("/");
                 } else {
                     $view->flashMessage("Nastala neočekávaná chyba");
@@ -276,7 +287,8 @@ class App_Controller_Index extends Controller {
 
             $query->join("tb_user", "tb_konzultace.id_ucitel = uc.id", "uc", array("uc.firstname", "uc.lastname", "uc.kabinet"))
                     ->join("tb_cas", "tb_konzultace.id_cas = c.id", "c", array("c.cas_start", "c.cas_end"))
-                    ->where("tb_konzultace.id_rodic = ?", $userId);
+                    ->where("tb_konzultace.id_rodic = ?", $userId)
+                    ->order("c.cas_start");
 
 
             $konzultace = App_Model_Konzultace::initialize($query);
