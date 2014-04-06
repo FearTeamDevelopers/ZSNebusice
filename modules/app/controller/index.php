@@ -145,7 +145,6 @@ class App_Controller_Index extends Controller {
                     $i = count($usedCasy);
                     if ($i > 1) {
                         if ($idcasu - $usedCasy[$i - 2] > 3) {
-                            print_r("bla");
                             $message = "mezi některými schůzkami máte dlouhé mezery";
                         }
                     }
